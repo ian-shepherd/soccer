@@ -23,6 +23,10 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 from dateutil.relativedelta import relativedelta
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_agg import RendererAgg
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 import matplotlib.dates as mdates
@@ -30,7 +34,7 @@ import seaborn as sns
 from math import pi
 
 
-
+_lock = RendererAgg.lock
 plt.style.use('seaborn')
 sns.set_style(style='white')
 
@@ -488,7 +492,7 @@ p90 = p90_kpi(v_player_match_stats_fact, player_id)
 
 
 
-with row3_1:
+with row3_1, _lock:
     try:
         radar(v_player_match_stats_fact, player_dim, player_id, pos_group, club_color, selected_mins)
     except:
@@ -665,7 +669,7 @@ def match_log(v_player_match_stats_fact, match_dim, player_id, pos_group):
 
 
 
-with row4_1:
+with row4_1, _lock:
     st.subheader("")
     market_value(trans_mv_fact, player_dim, player_id, club_color)
 
