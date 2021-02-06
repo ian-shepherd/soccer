@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 #Created on Sat Jan 30 2021
-#Last updated Fri Feb 5 2021
+#Last updated Sat Feb 6 2021
 
 #@author: ishepher
 
@@ -203,13 +203,16 @@ row2_spacer1, row2_1, row2_spacer2, row2_2, row2_spacer3, row2_3, row2_spacer_4,
 
 with row2_1:
     selected_player = st.selectbox("Select a player", player_list)
+    
     player_id = player_dim[player_dim['player_slicer']==selected_player]['fbref'].iloc[0]
     pos_group = player_dim[player_dim['fbref']==player_id]['pos_group'].iloc[0]
     club = player_dim[player_dim['fbref']==player_id]['club'].iloc[0]
-    p_color_club = team_dim[team_dim['transfermarkt_name']==club]['primary_color'].iloc[0]
-    s_color_club = team_dim[team_dim['transfermarkt_name']==club]['secondary_color'].iloc[0]
-    club_color = p_color_club if p_color_club not in ('#FFFFFF', '#FCFCFC') else s_color_club
-    
+    try:
+        p_color_club = team_dim[team_dim['transfermarkt_name']==club]['primary_color'].iloc[0]
+        s_color_club = team_dim[team_dim['transfermarkt_name']==club]['secondary_color'].iloc[0]
+        club_color = p_color_club if p_color_club not in ('#FFFFFF', '#FCFCFC') else s_color_club
+    except:
+        club_color = '#000000'
     
     
 with row2_2:
@@ -227,7 +230,7 @@ with row2_3:
         match_dim, player_match_stats_fact, v_player_match_stats_fact = filter_data(match_dim, player_match_stats_fact, v_player_match_stats_fact, date_type, selected_min=start_date, selected_max=end_date)
     
 with row2_4:
-    selected_mins = st.number_input("Minimum number of minutes", min_value=200, value=200)
+    selected_mins = st.number_input("Min number of minutes", min_value=200, value=200)
 
 st.text("")
 st.text("")
@@ -329,7 +332,7 @@ def radar(df, player_dim, player_id, pos_group, club_color, min_filter):
     angles += angles[:1]
     
     # Plot figure
-    fig = plt.figure() #5,5
+    fig = plt.figure()
     
     
     # initialize spider plot
@@ -485,8 +488,12 @@ def p90_kpi(df, player_id):
         df1, df2, df3, df4
 
 demo = demographic(player_dim, player_id)
-kpi = kpis(player_match_stats_fact, player_id)
-p90 = p90_kpi(v_player_match_stats_fact, player_id)
+try:
+    kpi = kpis(player_match_stats_fact, player_id)
+    p90 = p90_kpi(v_player_match_stats_fact, player_id)
+except:
+    kpi = 'No data'
+    p90 = 'No data'
 
 
 
@@ -497,68 +504,86 @@ with row3_1, _lock:
         radar(v_player_match_stats_fact, player_dim, player_id, pos_group, club_color, selected_mins)
     except:
         st.write("Player does not mean minimum number of minutes based on selected timeframe")
-    
+
 with row3_2:
     st.write("")
     st.write("")
     st.text("{0:s}\nborn".format(str(demo[1].strftime('%d-%b-%Y')) + " (" + str(demo[2]) + ")"))
     st.text("")
-    st.text("{0:.0f}\nminutes".format(kpi[0]))
-    st.subheader("p90")
-    st.text("{0:.2f}\ngoals".format(p90[0]))
-    st.text("{0:.2f}\nkey passes".format(p90[5]))
-    st.text("{0:.2f}\ndribbles".format(p90[10]))
-    st.text("{0:.2f}\npressures".format(p90[15]))
+    try:
+        st.text("{0:.0f}\nminutes".format(kpi[0]))
+        st.subheader("p90")
+        st.text("{0:.2f}\ngoals".format(p90[0]))
+        st.text("{0:.2f}\nkey passes".format(p90[5]))
+        st.text("{0:.2f}\ndribbles".format(p90[10]))
+        st.text("{0:.2f}\npressures".format(p90[15]))
+    except:
+        st.text("Did not play during selected time period")
             
 with row3_3:
     st.write("")
     st.write("")
     st.text("{0:s}m\nheight".format(str(demo[4])))
     st.text("")
-    st.text("{0:.0f}\ngoals".format(kpi[1]))
-    st.subheader("")
-    st.text("")
-    st.text("{0:.2f}\nassists".format(p90[1]))
-    st.text("{0:.2%}\npassing%".format(p90[6]))
-    st.text("{0:.2f}\ntouches in box".format(p90[11]))
-    st.text("{0:.2f}\ntackles".format(p90[16]))
+    try:
+        st.text("{0:.0f}\ngoals".format(kpi[1]))
+        st.subheader("")
+        st.text("")
+        st.text("{0:.2f}\nassists".format(p90[1]))
+        st.text("{0:.2%}\npassing%".format(p90[6]))
+        st.text("{0:.2f}\ntouches in box".format(p90[11]))
+        st.text("{0:.2f}\ntackles".format(p90[16]))
+    except:
+        st.text("")
     
 with row3_4:
     st.write("")
     st.write("")
     st.text("{0:s}\nnationality".format(str(demo[3])))
     st.text("")
-    st.text("{0:.0f}\nassists".format(kpi[2]))
-    st.subheader("")
-    st.text("")
-    st.text("{0:.2f}\nxG".format(p90[2]))
-    st.text("{0:.2f}\nthrough balls".format(p90[7]))
-    st.text("{0:.2f}\nprog dribble dist".format(p90[12]))
-    st.text("{0:.2f}\ninterceptions".format(p90[17]))
+    try:
+        st.text("{0:.0f}\nassists".format(kpi[2]))
+        st.subheader("")
+        st.text("")
+        st.text("{0:.2f}\nxG".format(p90[2]))
+        st.text("{0:.2f}\nthrough balls".format(p90[7]))
+        st.text("{0:.2f}\nprog dribble dist".format(p90[12]))
+        st.text("{0:.2f}\ninterceptions".format(p90[17]))
+    except:
+        st.text("")
+
 with row3_5:
     st.write("")
     st.write("")
     st.text("{0:s}\nposition".format(str(demo[5])))
     st.text("")
-    st.text("{0:.1f}\nxG".format(kpi[3]))
-    st.subheader("")
-    st.text("")
-    st.text("{0:.2f}\nshots".format(p90[3]))
-    st.text("{0:.2f}\ncrosses".format(p90[8]))
-    st.text("{0:.2f}\nfouled".format(p90[13]))
-    st.text("{0:.2f}\nrecoveries".format(p90[18]))
+    try:
+        st.text("{0:.1f}\nxG".format(kpi[3]))
+        st.subheader("")
+        st.text("")
+        st.text("{0:.2f}\nshots".format(p90[3]))
+        st.text("{0:.2f}\ncrosses".format(p90[8]))
+        st.text("{0:.2f}\nfouled".format(p90[13]))
+        st.text("{0:.2f}\nrecoveries".format(p90[18]))
+    except:
+        st.text("")
+
 with row3_6:
     st.write("")
     st.write("")
     st.text("\u20ac{0:s}\nmarket value".format(demo[6]))
-    st.text("")
-    st.text("{0:.0f}\nsca".format(kpi[4]))
-    st.subheader("")
-    st.text("")
-    st.text("{0:.2f}\nxG/shot".format(p90[4]))
-    st.text("{0:.2f}\npass into final 1/3".format(p90[9]))
-    st.text("{0:.2f}\ndispossed".format(p90[14]))
-    st.text("{0:.2%}\naerial%".format(p90[19]))
+    try:
+        st.text("")
+        st.text("{0:.0f}\nsca".format(kpi[4]))
+        st.subheader("")
+        st.text("")
+        st.text("{0:.2f}\nxG/shot".format(p90[4]))
+        st.text("{0:.2f}\npass into final 1/3".format(p90[9]))
+        st.text("{0:.2f}\ndispossed".format(p90[14]))
+        st.text("{0:.2%}\naerial%".format(p90[19]))
+    except:
+        st.text("")
+
 
 
 
