@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 #Created on Sat Dec 4 2020
-#Last updated  Mon Feb 1 2021
+#Last updated  Sat Feb 13 2021
 
 #@author: ishepher
 
@@ -91,25 +91,35 @@ up_df_player_transfer_history_stg = pd.read_csv(transfermarkUpFolder + 'player_t
 all_images = [os.path.basename(x) for x in glob.glob(logosFolder + '*.png')]
 logo_names = [str(i).replace( '.png', '') for i in all_images]
 
+# fix naming of updated files to match dv
+up_df_squads_stg = up_df_squads_stg.rename(columns={'id' : 'player_id',
+                                              'url' : 'player_url',
+                                              'name' : 'player_name'})
+up_df_player_stats_stg = up_df_player_stats_stg.rename(columns={'id' : 'player_id',
+                                                          'name' : 'player_name'})
+up_df_keeper_stats_stg = up_df_keeper_stats_stg.rename(columns={'id' : 'player_id',
+                                                          'name' : 'player_name'})
+
+
 # Append Data
 # fbref
-df_meta_stg = pd.concat([cur_df_meta_stg.iloc[:,1:],up_df_meta_stg])
-df_officials_stg = pd.concat([cur_df_officials_stg.iloc[:,1:],up_df_officials_stg])
-df_formations_stg = pd.concat([cur_df_formations_stg.iloc[:,1:],up_df_formations_stg])
-df_squads_stg = pd.concat([cur_df_squads_stg.iloc[:,1:],up_df_squads_stg])
-df_match_stats_stg = pd.concat([cur_df_match_stats_stg.iloc[:,1:],up_df_match_stats_stg])
-df_player_stats_stg = pd.concat([cur_df_player_stats_stg.iloc[:,1:],up_df_player_stats_stg])
-df_player_passing_stats_stg = pd.concat([cur_df_player_passing_stats_stg.iloc[:,1:],up_df_player_passing_stats_stg])
-df_player_passing_type_stats_stg = pd.concat([cur_df_player_passing_type_stats_stg.iloc[:,1:],up_df_player_passing_type_stats_stg])
-df_player_defense_stats_stg = pd.concat([cur_df_player_defense_stats_stg.iloc[:,1:],up_df_player_defense_stats_stg])
-df_player_possession_stats_stg = pd.concat([cur_df_player_possession_stats_stg.iloc[:,1:],up_df_player_possession_stats_stg])
-df_player_misc_stats_stg = pd.concat([cur_df_player_misc_stats_stg.iloc[:,1:],up_df_player_misc_stats_stg])
-df_keeper_stats_stg = pd.concat([cur_df_keeper_stats_stg.iloc[:,1:],up_df_keeper_stats_stg])
+df_meta_stg = pd.concat([cur_df_meta_stg,up_df_meta_stg], join='inner', ignore_index=True)
+df_officials_stg = pd.concat([cur_df_officials_stg,up_df_officials_stg], join='inner', ignore_index=True)
+df_formations_stg = pd.concat([cur_df_formations_stg,up_df_formations_stg], join='inner', ignore_index=True)
+df_squads_stg = pd.concat([cur_df_squads_stg,up_df_squads_stg], join='inner', ignore_index=True)
+df_match_stats_stg = pd.concat([cur_df_match_stats_stg,up_df_match_stats_stg], join='inner', ignore_index=True)
+df_player_stats_stg = pd.concat([cur_df_player_stats_stg,up_df_player_stats_stg], join='inner', ignore_index=True)
+df_player_passing_stats_stg = pd.concat([cur_df_player_passing_stats_stg,up_df_player_passing_stats_stg], join='inner', ignore_index=True)
+df_player_passing_type_stats_stg = pd.concat([cur_df_player_passing_type_stats_stg,up_df_player_passing_type_stats_stg], join='inner', ignore_index=True)
+df_player_defense_stats_stg = pd.concat([cur_df_player_defense_stats_stg,up_df_player_defense_stats_stg], join='inner', ignore_index=True)
+df_player_possession_stats_stg = pd.concat([cur_df_player_possession_stats_stg,up_df_player_possession_stats_stg], join='inner', ignore_index=True)
+df_player_misc_stats_stg = pd.concat([cur_df_player_misc_stats_stg,up_df_player_misc_stats_stg], join='inner', ignore_index=True)
+df_keeper_stats_stg = pd.concat([cur_df_keeper_stats_stg,up_df_keeper_stats_stg], join='inner', ignore_index=True)
 
 # transfermark
-df_player_metadata_stg = pd.concat([cur_df_player_metadata_stg, up_df_player_metadata_stg])
-df_player_mv_history_stg = pd.concat([cur_df_player_mv_history_stg, up_df_player_mv_history_stg])
-df_player_transfer_history_stg = pd.concat([cur_df_player_transfer_history_stg, up_df_player_transfer_history_stg])
+df_player_metadata_stg = pd.concat([cur_df_player_metadata_stg, up_df_player_metadata_stg], join='inner', ignore_index=True)
+df_player_mv_history_stg = pd.concat([cur_df_player_mv_history_stg, up_df_player_mv_history_stg], join='inner', ignore_index=True)
+df_player_transfer_history_stg = pd.concat([cur_df_player_transfer_history_stg, up_df_player_transfer_history_stg], join='inner', ignore_index=True)
 
 
 # Drop extra files
@@ -215,9 +225,6 @@ df_officials = df_officials_stg.copy()
 df_formations = df_formations_stg.copy()
 
 # squads
-df_squads_stg = df_squads_stg.rename(columns={'id' : 'player_id',
-                                              'url' : 'player_url',
-                                              'name' : 'player_name'})
 df_squads_stg = df_squads_stg.merge(df_meta_stg.loc[:,['match_key', 'id']], how='inner', left_on='match_id', right_on='id')
 df_squads_stg = df_squads_stg.loc[:,['squads_key', 'match_key', 'match_id', 'team_id', 'player_id', 'player_url', 'player_name']]
 df_squads_stg['player_name'] = df_squads_stg['player_name'].str.replace("-", " ")
@@ -227,8 +234,6 @@ df_squads = df_squads_stg.copy()
 df_match_stats = df_match_stats_stg.copy()
 
 # player stats
-df_player_stats_stg = df_player_stats_stg.rename(columns={'id' : 'player_id',
-                                                          'name' : 'player_name'})
 df_player_stats_stg = df_player_stats_stg.merge(df_meta_stg.loc[:,['match_key', 'id']], how='inner', left_on='match_id', right_on='id')
 df_player_stats_stg['player_name'] = df_player_stats_stg['player_name'].str.replace("-", " ")
 df_player_stats_stg[['pos_1', 'pos_2', 'pos_3', 'pos_4', 'pos_5']] = pd.DataFrame([x.split(',') for x in df_player_stats_stg['position'].tolist()])
@@ -265,8 +270,6 @@ df_player_misc_stats_stg = df_player_misc_stats_stg.rename(columns={'id' : 'play
 df_player_misc_stats = df_player_misc_stats_stg.copy()
 
 # keeper stats
-df_keeper_stats_stg = df_keeper_stats_stg.rename(columns={'id' : 'player_id',
-                                                          'name' : 'player_name'})
 df_keeper_stats_stg = df_keeper_stats_stg.merge(df_meta_stg.loc[:,['match_key', 'id']], how='inner', left_on='match_id', right_on='id')
 df_keeper_stats_stg['nation'] = df_keeper_stats_stg['nation'].str.split(' ').str[1]
 df_keeper_stats_stg = df_keeper_stats_stg.loc[:,['keeper_match_key', 'match_key', 'match_id', 'team_id', 
@@ -527,7 +530,7 @@ logos_sql = """CREATE TABLE "club_logos_dim" ("id" TEXT, "logo" BLOB)"""
 
 #~~~~~OUPUT DATABASE COPIES~~~~~
 
-# other
+# # other
 df_player_translation.to_csv(outputFolder + 'player_translation.csv')
 df_team_translation.to_csv(outputFolder + 'team_translation.csv')
 df_team.to_csv(outputFolder + 'team_dim.csv')

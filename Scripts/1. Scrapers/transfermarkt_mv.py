@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #Created on Tue Jan 19 2021
-#Last updated Fri Jan 29 2021
+#Last updated Wed Feb 10 2021
 
 #@author: Shepherd, Ian
 
@@ -30,16 +30,20 @@ import random
 rootFolder = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 dataFolder = rootFolder + '/Data/'
 inputFolder = dataFolder + '/Flat/'
-currentFolder = dataFolder + '3. Current/2. Cleaned/transfermarkt/'
+dbFolder = dataFolder + '3. Current/3. Database/'
 outputFolder = dataFolder + '2. Update/1. Raw/transfermarkt/'
 
 # Load data
 players = pd.read_csv(inputFolder + 'player_translation.txt')
-current_players = pd.read_csv(currentFolder + 'player_mv_history.csv')
+db_players = pd.read_csv(dbFolder + 'trans_player_dim.csv')
 
-# Filter players in dataset
-players = players.merge(current_players.loc[:,['id']], how='left', left_on='transfermarkt', right_on='id')
-players = players[players['id'].isnull()]
+db_players = db_players.loc[:,['id', 'name']].rename(columns={'id' : 'transfermarkt'})
+db_players['url'] = '/' + + db_players['name'] + '/profil/spieler/' + db_players['transfermarkt'].map(str)
+db_players = db_players.drop(columns=['name'])
+
+# Generate df of all players
+players = pd.concat([players, db_players])
+players = players.drop_duplicates(subset=['transfermarkt'])
 
 
 # Tell webpage human browser
@@ -48,7 +52,6 @@ headers = {'User-Agent':
     
 # Prep Data
 players['t_name'] = players['url'].str.split('/').str[1]
-
 
 
 #~~~~~SCRAPE DATA~~~~~
@@ -91,7 +94,7 @@ dfMV = pd.DataFrame(columns=['id', 'date', 'team', 'value'])
 for i in range(0,len(players)): 
     
     url = players.iloc[i,3]
-    name = players.iloc[i,5]
+    name = players.iloc[i,4]
     id_ = players.iloc[i,2]
     
     try:

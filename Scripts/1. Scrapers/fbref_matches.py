@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 #Created on Sat Oct 24  2020
-#Last updated Tue Jan 26 2021
+#Last updated Wed Feb 10 2021
 
 #@author: ishepher
 
@@ -33,12 +33,12 @@ import random
 rootFolder = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 dataFolder = rootFolder + '/Data/'
 inputFolder = dataFolder + '2. Update/Flat/'
-currentFolder = dataFolder + '3. Current/2. Cleaned/fbref/'
+dbFolder = dataFolder + '3. Current/3. Database/'
 outputFolder = dataFolder + '2. Update/1. Raw/fbref/'
 
 # Load data
 match_urls = pd.read_csv(inputFolder + 'match_urls.csv')
-current_matches = pd.read_csv(currentFolder + 'metadata.csv')
+current_matches = pd.read_csv(dbFolder + 'match_dim.csv')
 
 # Filter matches in dataset
 match_urls = match_urls.merge(current_matches.loc[:,['url']], how='left', left_on='urls', right_on='url')

@@ -3,13 +3,13 @@
 # -*- coding: utf-8 -*-
 
 #Created on Tue Jan 19 2021
-#Last updated Fri Jan 29 2021
+#Last updated Wed Feb 2021
 
 #@author: Shepherd, Ian
 
 #Sources:
     #Transfermarkt
-#Input Data: csv of player urls
+#Input Data: csv of missing player urls
 #Output: csv of player metadata
 #
 #
@@ -32,15 +32,15 @@ import random
 rootFolder = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 dataFolder = rootFolder + '/Data/'
 inputFolder = dataFolder + '/Flat/'
-currentFolder = dataFolder + '3. Current/2. Cleaned/transfermarkt/'
+dbFolder = dataFolder + '3. Current/3. Database/'
 outputFolder = dataFolder + '2. Update/1. Raw/transfermarkt/'
 
 # Load data
 players = pd.read_csv(inputFolder + 'player_translation.txt')
-current_players = pd.read_csv(currentFolder + 'player_metadata.csv')
+db_players = pd.read_csv(dbFolder + 'trans_player_dim.csv')
 
 # Filter players in dataset
-players = players.merge(current_players.loc[:,['id']], how='left', left_on='transfermarkt', right_on='id')
+players = players.merge(db_players.loc[:,['id']], how='left', left_on='transfermarkt', right_on='id')
 players = players[players['id'].isnull()]
 
 
@@ -129,24 +129,24 @@ errors = []
 dfMeta = pd.DataFrame(columns=['id', 'name', 'born', 'birth_place', 'nationality',
                                'height', 'club', 'joined', 'contracted', 'mv', 'update'])
 
-for i in range(0,len(players)): 
+# for i in range(0,len(players)): 
     
-    url = players.iloc[i,3]
-    name = players.iloc[i,5]
-    id_ = players.iloc[i,2]
+#     url = players.iloc[i,3]
+#     name = players.iloc[i,5]
+#     id_ = players.iloc[i,2]
     
-    try:
-        meta = get_metadata(url, id_, name)
+#     try:
+#         meta = get_metadata(url, id_, name)
         
-        dfMeta = pd.concat([dfMeta, meta])
-        print(str(i) + ") " + name + " done")
-        time.sleep(random.randint(3,9))
-    except:
-        errors.append(url)
-        print(name, "ERROR")
+#         dfMeta = pd.concat([dfMeta, meta])
+#         print(str(i) + ") " + name + " done")
+#         time.sleep(random.randint(3,9))
+#     except:
+#         errors.append(url)
+#         print(name, "ERROR")
     
        
-dfMeta.to_csv(outputFolder + 'transfermarkt_player_meta.csv', index=False)
+# dfMeta.to_csv(outputFolder + 'transfermarkt_player_meta.csv', index=False)
 
-dfErrors = pd.DataFrame(errors, columns=['url'])
-dfErrors.to_csv(outputFolder + 'transfermarkt_player_meta_errors.csv', index=False)
+# dfErrors = pd.DataFrame(errors, columns=['url'])
+# dfErrors.to_csv(outputFolder + 'transfermarkt_player_meta_errors.csv', index=False)
