@@ -3,12 +3,12 @@
 # -*- coding: utf-8 -*-
 
 #Created on Sat Jan 30 2021
-#Last updated Sat Feb 6 2021
+#Last updated Mon Feb 1 2021
 
 #@author: ishepher
 
 #Input: csvs
-#Output: streamlit web app 
+#Output: web app 
 #
 #
 #
@@ -19,14 +19,11 @@
 
 # Packages
 import streamlit as st
+import os
 import pandas as pd
 import numpy as np
 import datetime as dt
 from dateutil.relativedelta import relativedelta
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_agg import RendererAgg
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 import matplotlib.dates as mdates
@@ -34,12 +31,14 @@ import seaborn as sns
 from math import pi
 
 
-_lock = RendererAgg.lock
+
 plt.style.use('seaborn')
 sns.set_style(style='white')
 
 # Folder paths
-dataFolder = 'https://github.com/ian-shepherd/soccer/blob/main/Data/'
+# rootFolder = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+rootFolder = r'C:\Users\ishepher\Desktop\A.I. Sports\Soccer\Dev\Web App\Dev'
+dataFolder = rootFolder + '/Data/3. Current/3. Database/'
 
 # Use the full page instead of a narrow central column
 st.set_page_config(page_title='Soccer Dashboard',
@@ -47,14 +46,14 @@ st.set_page_config(page_title='Soccer Dashboard',
                    layout="wide")
 
 
+# @st.cache
 
 # Import data
-@st.cache(allow_output_mutation=True)
 def load_data():
     
     # player dim
-    player_dim = pd.read_csv(dataFolder + 'player_dim.csv' + '?raw=true',
-                             usecols=['fbref', 'transfermarkt', 'player_name', 'pos_group', 'born', 'nationality', 'height', 'club', 'contracted', 'mv'])
+    player_dim = pd.read_csv(dataFolder + 'player_dim.csv', usecols=['fbref', 'transfermarkt', 'player_name', 'pos_group', 'born',
+                                                                 'nationality', 'height', 'club', 'contracted', 'mv'])
     player_dim['born'] = pd.to_datetime(player_dim['born']).dt.date
     player_dim['contracted'] = pd.to_datetime(player_dim['contracted']).dt.date
     player_dim = player_dim[player_dim['club'].notnull()]
@@ -62,14 +61,14 @@ def load_data():
     player_dim['player_slicer'] = player_dim['player_name'] + ' (' + player_dim['club'] + '-' + player_dim['fbref'] +')'
     
     # team_dim
-    team_dim = pd.read_csv(dataFolder + 'team_dim.csv' + '?raw=true', usecols=['fbref', 'transfermarkt_name', 'primary_color', 'secondary_color'])
+    team_dim = pd.read_csv(dataFolder + 'team_dim.csv', usecols=['fbref', 'transfermarkt_name', 'primary_color', 'secondary_color'])
     
     # match_dim
-    match_dim = pd.read_csv(dataFolder + 'match_dim.csv' + '?raw=true')
+    match_dim = pd.read_csv(dataFolder + 'match_dim.csv')
     match_dim['date'] = pd.to_datetime(match_dim['date']).dt.date
     
     # match_stats_fact
-    matchday_stats_fact = pd.read_csv(dataFolder + 'matchday_stats_fact.csv' + '?raw=true', usecols=['match_id', 'possession_x', 'possession_y'])
+    matchday_stats_fact = pd.read_csv(dataFolder + 'matchday_stats_fact.csv', usecols=['match_id', 'possession_x', 'possession_y'])
     matchday_stats_fact = matchday_stats_fact.merge(match_dim.loc[:,['id', 'id_x', 'id_y']], how='inner', left_on='match_id', right_on='id').drop(columns=['id'])
     matchday_stats_fact_x = matchday_stats_fact.loc[:,['match_id', 'id_x', 'possession_x']]
     matchday_stats_fact_x.columns = ['match_id', 'team_id', 'possession']
@@ -80,30 +79,30 @@ def load_data():
     
     
     # player_match_stats_fact
-    player_match_stats_fact = pd.read_csv(dataFolder + 'player_match_stats_fact.csv' + '?raw=true', 
+    player_match_stats_fact = pd.read_csv(dataFolder + 'player_match_stats_fact.csv', 
                                           usecols=['player_match_key', 'match_key', 'match_id', 'team_id', 'player_id', 'position',
                                                    'minutes', 'goals', 'assists', 'pk', 'xG', 'shots', 'shots_on_target', 'shot_creating_actions',
                                                    'passes_attempted', 'passes_completed', 'dribble_progressive_distance', 'dribble_success'])
     
     # player_defense_match_stats_fact
-    player_defense_match_stats_fact = pd.read_csv(dataFolder + 'player_defense_match_stats_fact.csv' + '?raw=true',
+    player_defense_match_stats_fact = pd.read_csv(dataFolder + 'player_defense_match_stats_fact.csv',
                                               usecols=['player_match_key', 'pressures', 'tackles', 'interceptions', 'blocks', 'clearances', 'dribbled_past'])
     
     # player_passing_match_stats_fact
-    player_passing_match_stats_fact = pd.read_csv(dataFolder + 'player_passing_match_stats_fact.csv' + '?raw=true',
+    player_passing_match_stats_fact = pd.read_csv(dataFolder + 'player_passing_match_stats_fact.csv', 
                                                   usecols=['player_match_key', 'key_passes', 'into_final_third', 'progressive_distance'])
     
     # player_passing_type_match_stats_fact
-    player_passing_type_match_stats_fact = pd.read_csv(dataFolder + 'player_passing_type_match_stats_fact.csv' + '?raw=true',
+    player_passing_type_match_stats_fact = pd.read_csv(dataFolder + 'player_passing_type_match_stats_fact.csv', 
                                                        usecols=['player_match_key', 'crosses', 'through_balls'])
     player_passing_match_stats_fact = player_passing_match_stats_fact.rename(columns={'progressive_distance' : 'pass_progressive_distance'})
     
     # player_possession_match_stats_fact
-    player_possession_match_stats_fact = pd.read_csv(dataFolder + 'player_possession_match_stats_fact.csv' + '?raw=true',
+    player_possession_match_stats_fact = pd.read_csv(dataFolder + 'player_possession_match_stats_fact.csv',
                                                      usecols=['player_match_key', 'touches', 'dispossessed', 'touches_attacking_pen'])
     
     # player_misc_match_stats_fact
-    player_misc_match_stats_fact = pd.read_csv(dataFolder + 'player_misc_match_stats_fact.csv' + '?raw=true',
+    player_misc_match_stats_fact = pd.read_csv(dataFolder + 'player_misc_match_stats_fact.csv', 
                                                usecols=['player_match_key', 'fouled', 'fouls', 'aerials_won', 'aerials_lost', 'recoveries'])
     
     
@@ -129,7 +128,7 @@ def load_data():
 
     
     # trans_mv_fact
-    trans_mv_fact = pd.read_csv(dataFolder + 'trans_mv_fact.csv' + '?raw=true')
+    trans_mv_fact = pd.read_csv(dataFolder + 'trans_mv_fact.csv')
     trans_mv_fact['date'] = pd.to_datetime(trans_mv_fact['date']).dt.date
     
     
@@ -152,7 +151,7 @@ player_dim, team_dim, match_dim, player_match_stats_fact, player_defense_match_s
 
 
 
-@st.cache(allow_output_mutation=True)
+
 def filter_data(match_dim, player_match_stats_fact, v_player_match_stats_fact, \
                 date_type, selected_seasons=season_list, selected_min=min_date, selected_max=max_date):
     
@@ -174,11 +173,37 @@ def filter_data(match_dim, player_match_stats_fact, v_player_match_stats_fact, \
 
 
 
+#~~~~~SIDEBAR FILTERS~~~~~
+
+# player
+selected_player = st.sidebar.selectbox("Select a player", player_list)
+player_id = player_dim[player_dim['player_slicer']==selected_player]['fbref'].iloc[0]
+pos_group = player_dim[player_dim['fbref']==player_id]['pos_group'].iloc[0]
+club = player_dim[player_dim['fbref']==player_id]['club'].iloc[0]
+p_color_club = team_dim[team_dim['transfermarkt_name']==club]['primary_color'].iloc[0]
+s_color_club = team_dim[team_dim['transfermarkt_name']==club]['secondary_color'].iloc[0]
+club_color = p_color_club if p_color_club not in ('#FFFFFF', '#FCFCFC', '#FAF7F7') else s_color_club
+
+# dates
+date_type = st.sidebar.radio("Filter type", ('Season', 'Dates'))
+if date_type == 'Season':
+    selected_season = st.sidebar.multiselect('Seasons', options=season_list, default='20/21')
+    match_dim, player_match_stats_fact, v_player_match_stats_fact = filter_data(match_dim, player_match_stats_fact, v_player_match_stats_fact, date_type, selected_season)
+    
+else:
+    date_delta = (max_date - min_date).days
+    date_range = pd.date_range(min_date, periods = date_delta + 1).date.tolist()
+    start_date, end_date = st.sidebar.select_slider("Date Range", options=date_range, value=(dt.date(2020,9,12),max_date))
+    match_dim, player_match_stats_fact, v_player_match_stats_fact = filter_data(match_dim, player_match_stats_fact, v_player_match_stats_fact, date_type, selected_min=start_date, selected_max=end_date)
+
+# minutes
+selected_mins = st.sidebar.number_input("Minimum number of minutes", min_value=200, value=200)
+
 
 
 #~~~~~ROW1 (HEADER)~~~~~
 
-row1_spacer1, row1_1, row1_spacer2, row1_2, row1_spacer3 = st.beta_columns((.1, 2, 1.5, 1, .1))
+row1_spacer1, row1_1, row1_spacer2, row1_2, row1_spacer3 = st.beta_columns((.1, 2, 1, 1, .1))
 
 
 row1_1.title('Soccer Dashboard')
@@ -192,59 +217,11 @@ with row1_2:
 
 
 
+#~~~~~ROW 2 (Demographic, KPIs, Radar)~~~~~
+row2_spacer1, row2_1, row2_spacer2, row2_2, row2_spacer3, row2_3, row2_spacer4, \
+    row2_4, row2_spacer_5 = st.beta_columns((.15, .5, .005, .75, .005, .5, .005, 1, .15))
 
-#~~~~~ROW 2 (FILTERS)~~~~~
-row2_spacer1, row2_1, row2_spacer2, row2_2, row2_spacer3, row2_3, row2_spacer_4, row2_4, row2_spacer5 = st.beta_columns((.2, 2, .1, .5, .1, 2, .1, .75, 1.5))
-  
-
-
-
-
-
-with row2_1:
-    selected_player = st.selectbox("Select a player", player_list)
-    
-    player_id = player_dim[player_dim['player_slicer']==selected_player]['fbref'].iloc[0]
-    pos_group = player_dim[player_dim['fbref']==player_id]['pos_group'].iloc[0]
-    club = player_dim[player_dim['fbref']==player_id]['club'].iloc[0]
-    try:
-        p_color_club = team_dim[team_dim['transfermarkt_name']==club]['primary_color'].iloc[0]
-        s_color_club = team_dim[team_dim['transfermarkt_name']==club]['secondary_color'].iloc[0]
-        club_color = p_color_club if p_color_club not in ('#FFFFFF', '#FCFCFC') else s_color_club
-    except:
-        club_color = '#000000'
-    
-    
-with row2_2:
-    date_type = st.radio("Filter type", ('Season', 'Dates'))
-    
-with row2_3:
-    if date_type == 'Season':
-        selected_season = st.multiselect('Seasons', options=season_list, default='20/21')
-        match_dim, player_match_stats_fact, v_player_match_stats_fact = filter_data(match_dim, player_match_stats_fact, v_player_match_stats_fact, date_type, selected_season)
-        
-    else:
-        date_delta = (max_date - min_date).days
-        date_range = pd.date_range(min_date, periods = date_delta + 1).date.tolist()
-        start_date, end_date = st.select_slider("Date Range", options=date_range, value=(dt.date(2020,9,12),max_date))
-        match_dim, player_match_stats_fact, v_player_match_stats_fact = filter_data(match_dim, player_match_stats_fact, v_player_match_stats_fact, date_type, selected_min=start_date, selected_max=end_date)
-    
-with row2_4:
-    selected_mins = st.number_input("Min number of minutes", min_value=200, value=200)
-
-st.text("")
-st.text("")
-
-
-
-
-#~~~~~ROW 3 (Demographic, KPIs, Radar)~~~~~
-row3_spacer1, row3_1, row3_spacer2, row3_2, row3_3, row3_4, row3_5, \
-    row3_6, row3_spacer7 = st.beta_columns((.15, 1.5, .005, 0.5, 0.5, 0.5, 0.5,  0.5, .4))
-
-
-def radar(df, player_dim, player_id, pos_group, club_color, min_filter):
-    
+def percentiles(df, player_dim, player_id, pos_group, club_color, min_filter):
     
     
     # Create copies of data
@@ -275,19 +252,33 @@ def radar(df, player_dim, player_id, pos_group, club_color, min_filter):
     df['passing%'] = df['passes_completed'] / df['passes_attempted']
     df['aerial%'] = df['aerials_won'] / (df['aerials_won'] + df['aerials_lost'])
     
+    # Split data
+    p90 = df.loc[player_id,:]
+    percentiles = df.copy()
+    
     # Get percentiles
-    for col in df.columns:
-        df.loc[:,col] = df[col].rank(pct=True)
+    for col in percentiles.columns:
+        percentiles.loc[:,col] = percentiles[col].rank(pct=True)
     
     # Reverse percentiles where high = bad
-    df['dispossessed'] = 1 - df['dispossessed']
-    df['fouls'] = 1 - df['fouls']
-    df['dribbled_past'] = 1 - df['dribbled_past']
-    df['pAdjDribbled_Past'] = 1 - df['pAdjDribbled_Past']
+    percentiles['dispossessed'] = 1 - percentiles['dispossessed']
+    percentiles['fouls'] = 1 - percentiles['fouls']
+    percentiles['dribbled_past'] = 1 - percentiles['dribbled_past']
+    percentiles['pAdjDribbled_Past'] = 1 - percentiles['pAdjDribbled_Past']
     
     # Filter for player
-    df = df.reset_index()
-    df = df[df['player_id']==player_id]
+    percentiles = percentiles.reset_index()
+    percentiles = percentiles[percentiles['player_id']==player_id]
+                
+                
+    return percentiles, p90
+
+
+
+
+def radar(df, pos_group, club_color):
+    
+    
     
     # Cols measured
     attack_cols = ['npG', 'shots', 'shooting%', 'passing%', 'key_passes', 'through_balls',
@@ -332,7 +323,7 @@ def radar(df, player_dim, player_id, pos_group, club_color, min_filter):
     angles += angles[:1]
     
     # Plot figure
-    fig = plt.figure()
+    fig = plt.figure() #5,5
     
     
     # initialize spider plot
@@ -402,10 +393,12 @@ def demographic(df, player_id):
     contract_until = df.loc[:,'contracted'].iloc[0]
     age = relativedelta(dt.date.today(), born).years
     mv = (str(market_value.astype(float)/1000000) + 'm' if market_value>=1000000 else str(int(market_value.astype(float)/1000)) + "k")
+    club = df.loc[:,'club'].iloc[0]
+    name = df.loc[:,'player_name'].iloc[0]
     
     
-    
-    return df, born, age, nationality, height, position, mv, contract_until
+    return name, position, born, age, height, nationality, club, contract_until, mv
+#df, born, age, nationality, height, position, mv, contract_until, club, name
 
 def kpis(df, player_id):
     
@@ -447,153 +440,53 @@ def p90_kpi(df, player_id):
     df = df.drop(columns=['minutes', 'passes_completed', 'passes_attempted', 'aerials_won', 'aerials_lost'])
     
     
-    gls = df['goals'].iloc[0]
-    ast = df['assists'].iloc[0]
-    xg = df['xG'].iloc[0]
-    shots = df['shots'].iloc[0]
-    xg_shot = df['xG/shot'].iloc[0]
-    
-    key_passes = df['key_passes'].iloc[0]
-    pass_per = df['passing%'].iloc[0]
-    through_balls = df['through_balls'].iloc[0]
-    crosses = df['crosses'].iloc[0]
-    pass_third = df['into_final_third'].iloc[0]
-    
-    dribble = df['dribble_success'].iloc[0]
-    touch_pen = df['touches_attacking_pen'].iloc[0]
-    drib_prog_dist = df['dribble_progressive_distance'].iloc[0]
-    fouled = df['fouled'].iloc[0]
-    dispossessed = df['dispossessed'].iloc[0]
-    
-    pressures = df['pressures'].iloc[0]
-    tkl = df['tackles'].iloc[0]
-    inter = df['interceptions'].iloc[0]
-    recoveries = df['recoveries'].iloc[0]
-    aerial_per = df['aerial%'].iloc[0]
-    
-    
-    df1 = df.loc[:,['goals', 'assists', 'xG', 'shots', 'xG/shot']]
-    df2 = df.loc[:,['key_passes', 'passing%', 'through_balls', 'crosses', 'into_final_third']]
-    df2 = df2.rename(columns={'key_passes' : 'key passes',
-                              'through_balls' : 'through balls',
-                              'into_final_third' : 'passed into final 1/3'})
-    df3 = df.loc[:,['dribble_success', 'touches_attacking_pen', 'dribble_progressive_distance', 'fouled', 'dispossessed']]
-    df4 = df.loc[:,['pressures', 'tackles', 'interceptions', 'recoveries', 'aerial%']]
-    
-    
-    return gls, ast, xg, shots, xg_shot, \
-        key_passes, pass_per, through_balls, crosses, pass_third, \
-        dribble, touch_pen, drib_prog_dist, fouled, dispossessed, \
-        pressures, tkl, inter, recoveries, aerial_per, \
-        df1, df2, df3, df4
+    return df
 
 demo = demographic(player_dim, player_id)
+kpi = kpis(player_match_stats_fact, player_id)
 try:
-    kpi = kpis(player_match_stats_fact, player_id)
-    p90 = p90_kpi(v_player_match_stats_fact, player_id)
+    p90 = percentiles(v_player_match_stats_fact, player_dim, player_id, pos_group, club_color, selected_mins)
 except:
-    kpi = 'No data'
-    p90 = 'No data'
+    p90 = None
 
 
 
 
+with row2_1:
+    st.image('https://fbref.com/req/202005121/images/headshots/' + player_id + '_2018.jpg')
+    
+    #name, position, born, age, height, nationality, club, contract_until, mv
+with row2_2:
+    st.text("Name: {0:s}".format(demo[0]))
+    st.text("Position: {0:s}".format(demo[1]))
+    st.text("Born: {0:s}".format(str(demo[2].strftime('%d-%b-%Y')) + " (" + str(demo[3]) + ")"))
+    st.text("Height: {0:s}m".format(str(demo[4])))
+    st.text("Nationality: {0:s}".format(demo[5]))
+    st.text("Club: {0:s}".format(demo[6]))
+    st.text("Contracted Until: {0:s}".format(str(demo[7].strftime('%d-%b-%Y'))))
+    st.text("Market Value: \u20ac{0:s}".format(demo[8]))
+    
 
-with row3_1, _lock:
+with row2_3:
+    st.text("Minutes: {0:.0f}".format(kpi[0]))
+    st.text("G: {0:.0f}".format(kpi[1]))
+    st.text("A: {0:.0f}".format(kpi[2]))
+    st.text("xG: {0:.1f}".format(kpi[3]))
+    st.text("SCA: {0:.0f}".format(kpi[4]))
+    
+    
+with row2_4:
     try:
-        radar(v_player_match_stats_fact, player_dim, player_id, pos_group, club_color, selected_mins)
+        radar(p90[0], pos_group, club_color)
     except:
         st.write("Player does not mean minimum number of minutes based on selected timeframe")
 
-with row3_2:
-    st.write("")
-    st.write("")
-    st.text("{0:s}\nborn".format(str(demo[1].strftime('%d-%b-%Y')) + " (" + str(demo[2]) + ")"))
-    st.text("")
-    try:
-        st.text("{0:.0f}\nminutes".format(kpi[0]))
-        st.subheader("p90")
-        st.text("{0:.2f}\ngoals".format(p90[0]))
-        st.text("{0:.2f}\nkey passes".format(p90[5]))
-        st.text("{0:.2f}\ndribbles".format(p90[10]))
-        st.text("{0:.2f}\npressures".format(p90[15]))
-    except:
-        st.text("Did not play during selected time period")
-            
-with row3_3:
-    st.write("")
-    st.write("")
-    st.text("{0:s}m\nheight".format(str(demo[4])))
-    st.text("")
-    try:
-        st.text("{0:.0f}\ngoals".format(kpi[1]))
-        st.subheader("")
-        st.text("")
-        st.text("{0:.2f}\nassists".format(p90[1]))
-        st.text("{0:.2%}\npassing%".format(p90[6]))
-        st.text("{0:.2f}\ntouches in box".format(p90[11]))
-        st.text("{0:.2f}\ntackles".format(p90[16]))
-    except:
-        st.text("")
-    
-with row3_4:
-    st.write("")
-    st.write("")
-    st.text("{0:s}\nnationality".format(str(demo[3])))
-    st.text("")
-    try:
-        st.text("{0:.0f}\nassists".format(kpi[2]))
-        st.subheader("")
-        st.text("")
-        st.text("{0:.2f}\nxG".format(p90[2]))
-        st.text("{0:.2f}\nthrough balls".format(p90[7]))
-        st.text("{0:.2f}\nprog dribble dist".format(p90[12]))
-        st.text("{0:.2f}\ninterceptions".format(p90[17]))
-    except:
-        st.text("")
-
-with row3_5:
-    st.write("")
-    st.write("")
-    st.text("{0:s}\nposition".format(str(demo[5])))
-    st.text("")
-    try:
-        st.text("{0:.1f}\nxG".format(kpi[3]))
-        st.subheader("")
-        st.text("")
-        st.text("{0:.2f}\nshots".format(p90[3]))
-        st.text("{0:.2f}\ncrosses".format(p90[8]))
-        st.text("{0:.2f}\nfouled".format(p90[13]))
-        st.text("{0:.2f}\nrecoveries".format(p90[18]))
-    except:
-        st.text("")
-
-with row3_6:
-    st.write("")
-    st.write("")
-    st.text("\u20ac{0:s}\nmarket value".format(demo[6]))
-    try:
-        st.text("")
-        st.text("{0:.0f}\nsca".format(kpi[4]))
-        st.subheader("")
-        st.text("")
-        st.text("{0:.2f}\nxG/shot".format(p90[4]))
-        st.text("{0:.2f}\npass into final 1/3".format(p90[9]))
-        st.text("{0:.2f}\ndispossed".format(p90[14]))
-        st.text("{0:.2%}\naerial%".format(p90[19]))
-    except:
-        st.text("")
 
 
 
+#~~~~~ROW 3 (Market Value, Lollipop)~~~~~
+row3_spacer1, row3_1, row3_spacer2, row3_2, row3_spacer3 = st.beta_columns((.15, 1, .005, 1, .15))
 
-
-
-    
-    
-#~~~~~ROW 4~~~~~
-    
-row4_spacer1, row4_1, row4_spacer2, row4_2, row4_spacer3 = st.beta_columns((.15, 1.5, .005, 2.75, .4))
 
 def market_value(df, player_dim, player_id, club_color):
         
@@ -628,7 +521,7 @@ def market_value(df, player_dim, player_id, club_color):
         y_formatter = FuncFormatter(thousands)
         
     # Plot figure
-    fig, ax = plt.subplots(1)
+    fig, ax = plt.subplots()
     ax.fill_between(x, y, color=club_color, alpha=0.3)
     ax.plot(x, y, color=club_color)
     ax.set_facecolor('w')
@@ -641,14 +534,84 @@ def market_value(df, player_dim, player_id, club_color):
     plt.title("Market Value")
 
     st.pyplot(fig)
+
+
+def lollipop_chart(percentiles, p90, club_color):
     
+    # df = df[df['fbref']==player_id]
+    
+    cols = ['goals', 'assists', 'xG', 'shots', 'key_passes', 'through_balls',
+            'crosses', 'into_final_third', 'dribble_success',
+            'touches_attacking_pen', 'dribble_progressive_distance', 'fouled',
+            'dispossessed', 'pressures', 'tackles', 'interceptions', 'recoveries',
+            'xG/shot', 'passing%', 'aerial%']
+    
+    percentiles = percentiles.loc[:,cols]
+    p90 = p90[cols]
+    
+    
+    percentiles = percentiles.rename(columns={'key_passes' : 'key passes',
+                                              'through_balls' : 'through balls',
+                                              'into_final_third' : 'pass into final 1/3',
+                                              'dribble_success' : 'dribbles',
+                                              'touches_attacking_pen' : 'touches in box',
+                                              'dribble_progressive_distance' : 'prog dribble dist'})
+    
+    x = percentiles.columns
+    y = percentiles.iloc[0,:].multiply(100)
+    
+    
+    fig, ax = plt.subplots()
+    
+    ind = range(1,len(percentiles.columns)+1)
+    plt.hlines(ind, xmin=0, xmax=y, color=club_color, label='test')
+    plt.plot(y, ind, "o", markerfacecolor=club_color)
+    plt.yticks(ind, x)
+    
+    ax.set_yticklabels(x, minor=False, fontsize='small')
+    ax.set_xlim(0,100)
+    
+    
+    txt = 'data labels are non-percentile p90 stats'
+    plt.figtext(.1, 0, txt, fontstyle='italic')
+    plt.title('p90 Percentiles')
+   
+    
+    for i, v in enumerate(y):
+        if i < 18:
+            plt.text(v + 3, i + .75, str(round(p90[i],2)))
+        else:
+            plt.text(v + 3, i + .75, str(round(p90[i]*100,1))+'%')
+    
+    
+    st.pyplot(fig)
+
+
+
+with row3_1:
+    st.subheader("")
+    market_value(trans_mv_fact, player_dim, player_id, club_color)
+    
+with row3_2:
+    st.subheader("")
+    try:
+        lollipop_chart(p90[0], p90[1], club_color)
+    except:
+        st.write("Player does not mean minimum number of minutes based on selected timeframe")
+        
+        
+#~~~~~ROW 4 (Match Log)~~~~~
+row4_spacer1, row4_1, row4_spacer2 = st.beta_columns((.1, 3.2, .1))
+
 
 def match_log(v_player_match_stats_fact, match_dim, player_id, pos_group):
     
     v_player_match_stats_fact = v_player_match_stats_fact[v_player_match_stats_fact['player_id']==player_id]
-        
     
-    log_base_cols = ['date', 'opponent', 'position', 'minutes', 'goals', 'assists']
+    # v_player_match_stats_fact['xG'] = v_player_match_stats_fact['xG'].round(2)
+    
+    
+    log_base_cols = ['date', 'opponent', 'league', 'position', 'minutes', 'goals', 'assists']
     log_attack_cols = ['xG', 'shots', 'key_passes', 'passing%','dribble_success', 'touches', 'touches_attacking_pen', 'tkl+int']
     log_wm_cols = ['passing%', 'key_passes', 'through_balls', 'crosses', 'tkl+int', 'dispossessed', 'dribble_success', 'recoveries']
     log_cm_cols = ['passing%', 'key_passes', 'through_balls', 'tackles', 'interceptions', 'dispossessed', 'fouls', 'pass_progressive_distance']
@@ -674,7 +637,7 @@ def match_log(v_player_match_stats_fact, match_dim, player_id, pos_group):
     df = df.loc[:,cols]
     
     for col in df.columns:
-        if col not in ['date', 'opponent', 'position', 'xG', 'passing%']:
+        if col not in ['date', 'opponent', 'league', 'position', 'xG', 'passing%']:
             df[col] = df[col].astype(int)
     
     df = df.rename(columns={'position' : 'pos',
@@ -693,22 +656,13 @@ def match_log(v_player_match_stats_fact, match_dim, player_id, pos_group):
     return df.set_index('date')
 
 
-
-with row4_1, _lock:
-    st.subheader("")
-    market_value(trans_mv_fact, player_dim, player_id, club_color)
-
-
-
-with row4_2:
+with row4_1:
     st.subheader("Match Log")
     st.dataframe(match_log(v_player_match_stats_fact, match_dim, player_id, pos_group).style.format({"xG": "{:.1f}",
                                                                                                       "passing%" : "{:.1%}"}))
     
     
-
-
-#~~~~~ROW 5 (ADDITIONAL INFO EXPANDER)~~~~~
+#~~~~~ROW 5 (Additional Info Expander)~~~~~
 row5_spacer1, row5_1, row5_spacer2 = st.beta_columns((.1, 3.2, .1))
 
 with row5_1:
@@ -726,6 +680,6 @@ with row5_1:
         beyond that threshold as time permits.
         
         As a disclaimer this is the first app I have built so it is far from perfect. Consequently, it is not mobile compatible 
-        and looks much better on a wide screen. Please refer to my [GitHub] (https://github.com/ian-shepherd/soccer) for future roadmap.
-        
+        and looks much better on a wide screen. Please refer to my [GitHub] (https://github.com/ian-shepherd) for future roadmap.
+
         '''

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #Created on Tue Jan 19 2021
-#Last updated Wed Feb 10 2021
+#Last updated Tue Feb 16 2021
 
 #@author: Shepherd, Ian
 
@@ -35,22 +35,18 @@ outputFolder = dataFolder + '2. Update/1. Raw/transfermarkt/'
 
 # Load data
 players = pd.read_csv(inputFolder + 'player_translation.txt')
-db_players = pd.read_csv(dbFolder + 'trans_player_dim.csv')
+db_players = pd.read_csv(dbFolder + 'trans_mv_fact.csv')
 
-db_players = db_players.loc[:,['id', 'name']].rename(columns={'id' : 'transfermarkt'})
-db_players['url'] = '/' + + db_players['name'] + '/profil/spieler/' + db_players['transfermarkt'].map(str)
-db_players = db_players.drop(columns=['name'])
+# Filter players in dataset
+db_players = db_players.loc[:,['id']].drop_duplicates()
+players = players.merge(db_players.loc[:,['id']], how='left', left_on='transfermarkt', right_on='id')
+players = players[players['id'].isnull()]
 
-# Generate df of all players
-players = pd.concat([players, db_players])
-players = players.drop_duplicates(subset=['transfermarkt'])
-
-
-# Tell webpage human browser
+# # Tell webpage human browser
 headers = {'User-Agent':
-           'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
     
-# Prep Data
+# # Prep Data
 players['t_name'] = players['url'].str.split('/').str[1]
 
 
@@ -94,7 +90,7 @@ dfMV = pd.DataFrame(columns=['id', 'date', 'team', 'value'])
 for i in range(0,len(players)): 
     
     url = players.iloc[i,3]
-    name = players.iloc[i,4]
+    name = players.iloc[i,5]
     id_ = players.iloc[i,2]
     
     try:
