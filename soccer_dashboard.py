@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 #Created on Sat Jan 30 2021
-#Last updated Mon Feb 1 2021
+#Last updated Tue Feb 15 2021
 
 #@author: ishepher
 
@@ -126,7 +126,7 @@ def load_data():
 
     
     # trans_mv_fact
-    trans_mv_fact = pd.read_csv(dataFolder + 'trans_mv_fact.csv')
+    trans_mv_fact = pd.read_csv(dataFolder + 'trans_mv_fact.csv' + '?raw=true')
     trans_mv_fact['date'] = pd.to_datetime(trans_mv_fact['date']).dt.date
     
     
