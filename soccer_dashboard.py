@@ -53,8 +53,9 @@ st.set_page_config(page_title='Soccer Dashboard',
 def load_data():
     
     # player dim
-    player_dim = pd.read_csv(dataFolder + 'player_dim.csv', usecols=['fbref', 'transfermarkt', 'name', 'position_main', 'born', 'birth_place',
-                                                                     'nationality', 'height', 'foot', 'club', 'contracted', 'mv'])
+    player_dim = pd.read_csv(dataFolder + 'player_dim.csv' + '?raw=true',
+                             usecols=['fbref', 'transfermarkt', 'name', 'position_main', 'born', 'birth_place',
+                                      'nationality', 'height', 'foot', 'club', 'contracted', 'mv'])
     player_dim['born'] = pd.to_datetime(player_dim['born']).dt.date
     player_dim['contracted'] = pd.to_datetime(player_dim['contracted']).dt.date
     player_dim = player_dim[player_dim['club'].notnull()]
@@ -77,14 +78,16 @@ def load_data():
     player_dim['player_slicer'] = player_dim['name'] + ' (' + player_dim['club'] + '-' + player_dim['fbref'] +')'
     
     # team_dim
-    team_dim = pd.read_csv(dataFolder + 'team_dim.csv', usecols=['fbref', 'transfermarkt_name', 'primary_color', 'secondary_color', 'alternate_color'])
+    team_dim = pd.read_csv(dataFolder + 'team_dim.csv' + '?raw=true',
+                           usecols=['fbref', 'transfermarkt_name', 'primary_color', 'secondary_color', 'alternate_color'])
     
     # match_dim
-    match_dim = pd.read_csv(dataFolder + 'match_dim.csv')
+    match_dim = pd.read_csv(dataFolder + 'match_dim.csv' + '?raw=true')
     match_dim['date'] = pd.to_datetime(match_dim['date']).dt.date
     
     # match_stats_fact
-    matchday_stats_fact = pd.read_csv(dataFolder + 'matchday_stats_fact.csv', usecols=['match_id', 'possession_x', 'possession_y'])
+    matchday_stats_fact = pd.read_csv(dataFolder + 'matchday_stats_fact.csv' + '?raw=true',
+                                      usecols=['match_id', 'possession_x', 'possession_y'])
     matchday_stats_fact = matchday_stats_fact.merge(match_dim.loc[:,['id', 'id_x', 'id_y']], how='inner', left_on='match_id', right_on='id').drop(columns=['id'])
     matchday_stats_fact_x = matchday_stats_fact.loc[:,['match_id', 'id_x', 'possession_x']]
     matchday_stats_fact_x.columns = ['match_id', 'team_id', 'possession']
@@ -93,7 +96,7 @@ def load_data():
     matchday_stats_fact = pd.concat([matchday_stats_fact_x, matchday_stats_fact_y], ignore_index=True)
     
     # v_player_match_stats_fact
-    v_player_match_stats_fact = pd.read_csv(dataFolder + 'v_player_match_stats_fact.csv',
+    v_player_match_stats_fact = pd.read_csv(dataFolder + 'v_player_match_stats_fact.csv' + '?raw=true',
                                             usecols=['match_id', 'team_id', 'player_id', 'position',
                                                    'minutes', 'goals', 'assists', 'pk', 'xG', 'shots', 'shots_on_target', 'shot_creating_actions',
                                                    'passes_attempted', 'passes_completed', 'dribble_progressive_distance', 'dribble_success',
