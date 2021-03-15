@@ -1,7 +1,7 @@
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/ian-shepherd/soccer/main/soccer_dashboard.py)
 
 # Soccer Dashboard
-This app runs on streamlit and is meant to provide a summary of player performance for all players who played in any of the Big 5 leagues (Bundelisga, EPL, La Liga, Ligue 1, Serie A) from 2017-2018 season to present or Europa/Champions League 2018-2019 season to present. However, the dashboard itself is merely a piece of the entire process. Included in this repositories is my entire process for scraping data from websites, clean the data, and then build/manage a database that ultimately powers the app. Inspiration for this dashboard came from Max Bolger's NFL Receiver Dashboard (https://github.com/maxbolger/nfl-receiver-dashboard). I also want to give a special thanks to FC Python as well as their tutorials helped me out a lot in my early stages of using python for soccer data.
+This app runs on streamlit and is meant to provide a summary of player performance for all players who played in any of the Big 5 leagues (Bundelisga, EPL, La Liga, Ligue 1, Serie A) or MLS from 2017-2018 season to present or Europa/Champions League 2018-2019 season to present. However, the dashboard itself is merely a piece of the entire process. Included in this repositories is my entire process for scraping data from websites, clean the data, and then build/manage a database that ultimately powers the app. Inspiration for this dashboard came from Max Bolger's NFL Receiver Dashboard (https://github.com/maxbolger/nfl-receiver-dashboard). I also want to give a special thanks to FC Python as well as their tutorials helped me out a lot in my early stages of using python for soccer data.
 
 
 ## Data Sources
@@ -20,10 +20,10 @@ All data comes from fbref, including their StatsBomb data, and Transfermarkt. I 
 [fcpython]: https://fcpython.com/
 
 # Roadmap
-- Mobile friendly
-- Some sort of identifier to show where players rank for p90 stats
-- Player comparison tool
-- Time comparison (i.e. compare a player's current season to previous)
+-Player search: ability to search for all players who meet a specified criteria
+-Team pages
+-Similarity scores
+-Transfer history
 
 
 ## Disclaimers

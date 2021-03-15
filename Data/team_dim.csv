@@ -1,197 +1,238 @@
-,fbref,fbref_name,country,fcpython_name,transfermarkt,transfermarkt_name,transfermarkt_link,long_name,primary_color,secondary_color,alternate_color
-0,d20821dd,LASK,Austria,LASK,413,LASK,lask-linz,Linzer Athletik Sport Klub,#000000,#FFFFFF,#ff0000
-1,912e4c40,Rapid Wien,Austria,Rapid Vienna,170,Rapid Vienna,sk-rapid-wien,SK Rapid Wien,#008543,#FFFFFF,
-2,50f2a074,Red Bull Salzburg,Austria,Red Bull Salzburg,409,Red Bull Salzburg,red-bull-salzburg,FC Red Bull Salzburg,#E41349,#FFFFFF,
-3,426658a6,Wolfsberger AC,Austria,Wolfsberger AC,4441,Wolfsberger AC,wolfsberger-ac,RZ Pellets WAC,#000000,#FFFFFF,
-4,44b65410,Qarabağ Ağdam,Azerbaijan,Qarabağ Ağdam,10625,Qarabağ Ağdam,qarabag-agdam,FK Qarabag Agdam,#000000,#0f00e6,
-5,b983b638,BATE Borisov,Belarus,BATE Borisov,713,BATE Borisov,bate-borisov,Futbolni Klub BATE Borisov,#233d92,#fcda06,#233d92
-6,08ad393c,Anderlecht,Belgium,RSC Anderlecht,58,RSC Anderlecht,rsc-anderlecht,Royal Sporting Club Anderlecht,#FFFFFF,#660099,
-7,f1e6c5f1,Club Brugge,Belgium,Club Brugge KV,2282,Club Brugge KV,fc-brugge,Club Brugge Koninklijke Voetbalvereniging,#0000FF,#000000,
-8,1e972a99,Genk,Belgium,KRC Genk,1184,KRC Genk,krc-genk,Koninklijke Racing Club Genk,#FFFFFF,#0000FF,
-9,51e5a603,Gent,Belgium,KAA Gent,157,KAA Gent,kaa-gent,Koninklijke Atletiek Associatie Gent,#FFFFFF,#0033CC,
-10,33c6b26e,Standard Liège,Belgium,Standard Liège,3057,Standard Liège,standard-luttich,Royal Standard Club de Liège,#FFFFFF,#FF0000,
-11,488c6ba1,Ludogorets Razgrad,Bulgaria,PFK Ludogorets Razgrad,31614,PFK Ludogorets Razgrad,pfk-ludogorets-razgrad,PFC Ludogorets Razgrad,#005F27,#FFFFFF,
-12,edd0d381,Dinamo Zagreb,Croatia,GNK Dinamo Zagreb,419,GNK Dinamo Zagreb,gnk-dinamo-zagreb,GNK Dinamo Zagreb,#1c388c,#E32118,
-13,01689b1a,AÉK Lárnaka,Cyprus,AEK Larnaca,2156,AEK Larnaca,aek-larnaka,Athletiki Enosi Kition Larnakas,#017947,#F6EF1E,
-14,eab315a6,APOEL,Cyprus,APOEL Nicosia,2784,APOEL Nicosia,apoel-nikosia,Athletikos Podosferikos Omilos Ellinon Lefkosias,#2E3A90,#F5BC21,
-15,8dff1828,Apollon,Cyprus,Apollon Limassol,429,Apollon Limassol,apollon-limassol,Apollon Limassol,#416EB5,#FFFFFF,
-16,8424bb18,Jablonec,Czech Republic,FK Jablonec,1322,FK Jablonec,fk-jablonec,FK Jablonec a.s.,#07852F,#FFFFFF,#000000
-17,111cbfb1,Slavia Prague,Czech Republic,SK Slavia Prague,62,SK Slavia Prague,sk-slavia-prag,"SK Slavia Praha, a.s.",#b80707,#ffffff,
-18,02cd81bf,Viktoria Plzeň,Czech Republic,FC Viktoria Plzen,941,FC Viktoria Plzen,fc-viktoria-pilsen,"FC Viktoria Plzeň, a.s.",#FF0000,#0000FF,
-19,18050b20,FC Copenhagen,Denmark,FC Copenhagen,190,FC Copenhagen,fc-kopenhagen,Fodbold Club København,#BF2126,#FFFFFF,#375197
-20,18bb7c10,Arsenal,England,Arsenal FC,11,Arsenal FC,arsenal-fc,Arsenal Football Club,#EF0107,#FFFFFF,#9C824A
-21,8602292d,Aston Villa,England,Aston Villa,405,Aston Villa,aston-villa,Aston Villa Football Club,#670E36,#95BFE5,
-22,4ba7cbea,Bournemouth,England,AFC Bournemouth,989,AFC Bournemouth,afc-bournemouth,Association Football Club Bournemouth,#BF0C10,#0C0D0F,#BEA578
-23,d07537b9,Brighton & Hove Albion,England,Brighton & Hove Albion,1237,Brighton & Hove Albion,brighton-amp-hove-albion,Brighton and Hove Albion Football Club,#0054A6,#FFFFFF,
-24,943e8050,Burnley,England,Burnley FC,1132,Burnley FC,burnley-fc,Burnley Football Club,#660808,#73e8f0,#000000
-25,75fae011,Cardiff City,England,Cardiff City,603,Cardiff City,cardiff-city,Cardiff City Association Football Club,#0070B5,#D11524,
-26,cff3d9bb,Chelsea,England,Chelsea FC,631,Chelsea FC,chelsea-fc,Chelsea Football Club,#004793,#FFFFFF,
-27,47c64c55,Crystal Palace,England,Crystal Palace,873,Crystal Palace,crystal-palace,Crystal Palace Football Club,#1B458F,#C4122E,#A7A5A6
-28,d3fd31cc,Everton,England,Everton FC,29,Everton FC,everton-fc,Everton Football Club,#0052CC,#FFFFFF,
-29,fd962109,Fulham,England,Fulham FC,931,Fulham FC,fulham-fc,Fulham Football Club,#ffffff,#000000,#CC0000
-30,f5922ca5,Huddersfield Town,England,Huddersfield Town,1110,Huddersfield Town,huddersfield-town,Huddersfield Town Football Club,#0072CE,#FFFFFF,
-31,a2d435b3,Leicester City,England,Leicester City,1003,Leicester City,leicester-city,Leicester City Football Club,#0053A0,#FDBE11,
-32,822bd0ba,Liverpool,England,Liverpool FC,31,Liverpool FC,liverpool-fc,Liverpool Football Club,#D10022,#FFFFFF,#00A499
-33,b8fd03ef,Manchester City,England,Manchester City,281,Manchester City,manchester-city,Manchester City Football Club,#84BBFF,#FFFFFF,#84BBFF
-34,19538871,Manchester United,England,Manchester United,985,Manchester United,manchester-united,Manchester United Football Club,#D9020D,#FFFFFF,#000000
-35,b2b47a98,Newcastle United,England,Newcastle United,762,Newcastle United,newcastle-united,Newcastle United Football Club,#000000,#FFFFFF,
-36,1c781004,Norwich City,England,Norwich City,1123,Norwich City,norwich-city,Norwich City Football Club,#009900,#FFFF00,
-37,1df6b87e,Sheffield United,England,Sheffield United,350,Sheffield United,sheffield-united,Sheffield United Football Club,#ec2227,#010101,#ffffff
-38,33c895d4,Southampton,England,Southampton FC,180,Southampton FC,southampton-fc,Southampton Football Club,#FF0033,#FFFFFF,
-39,17892952,Stoke City,England,Stoke City,512,Stoke City,stoke-city,Stoke City Football Club,#FF0033,#FFFFFF,#FF0033
-40,fb10988f,Swansea City,England,Swansea City,2288,Swansea City,swansea-city,Swansea City Association Football Club,#000000,#ffffff,
-41,361ca564,Tottenham Hotspur,England,Tottenham Hotspur,148,Tottenham Hotspur,tottenham-hotspur,Tottenham Hotspur Football Club,#FFFFFF,#001C58,#ffffff
-42,2abfe087,Watford,England,Watford FC,1010,Watford FC,watford-fc,Watford Football Club,#fff71c,#e3002d,#000000
-43,60c6b05f,West Bromwich Albion,England,West Bromwich Albion,984,West Bromwich Albion,west-bromwich-albion,West Bromwich Albion Football Club,#000080,#FFFFFF,
-44,7c21e445,West Ham United,England,West Ham United,379,West Ham United,west-ham-united,West Ham United Football Club,#660033,#0099FF,
-45,8cec06e1,Wolverhampton Wanderers,England,Wolverhampton Wanderers,543,Wolverhampton Wanderers,wolverhampton-wanderers,Wolverhampton Wanderers Football Club,#FDB913,#231F20,
-46,25622401,Amiens,France,Amiens SC,1416,Amiens SC,sc-amiens,Amiens Sporting Club Football,#000000,#FFFFFF,
-47,69236f98,Angers,France,SCO Angers,1420,SCO Angers,sco-angers,Angers Sporting Club de l´Ouest,#000000,#FFFFFF,#FFFFFF
-48,123f3efe,Bordeaux,France,FC Girondins Bordeaux,40,FC Girondins Bordeaux,fc-girondins-bordeaux,Football Club des Girondins de Bordeaux,#000979,#FFFFFF,
-49,fb08dbb3,Brest,France,Stade Brest 29,3911,Stade Brest 29,stade-brest-29,Stade brestois 29,#FF0000,#FFFFFF,#231F20
-50,74229020,Caen,France,SM Caen,1162,SM Caen,sm-caen,Stade Malherbe Caen Calvados Basse-Normandie,#000050,#FFFFFF,#FF0000
-51,8dfb7350,Dijon,France,Dijon FCO,2969,Dijon FCO,fco-dijon,Dijon Football Côte d´Or,#E50001,#FFFFFF,#002C4C
-52,d41b5f53,Guingamp,France,EA Guingamp,855,EA Guingamp,ea-guingamp,En Avant de Guingamp,#000000,#FD1220,#FFFFFF
-53,cb188c0c,Lille,France,LOSC Lille,1082,LOSC Lille,osc-lille,Lille Olympique Sporting Club Lille Métropole,#F20505,#FFFFFF,
-54,d53c0b06,Lyon,France,Olympique Lyon,1041,Olympique Lyon,olympique-lyon,Olympique Lyonnais,#ffffff,#003781,#db0013
-55,5725cc7b,Marseille,France,Olympique Marseille,244,Olympique Marseille,olympique-marseille,Olympique de Marseille,#FFFFFF,#099FFF,
-56,f83960ae,Metz,France,FC Metz,347,FC Metz,fc-metz,Football Club de Metz,#6E0F12,#FFFFFF,
-57,fd6114db,Monaco,France,AS Monaco,162,AS Monaco,as-monaco,Association sportive de Monaco Football Club,#FF0000,#FFFFFF,
-58,281b0e73,Montpellier,France,Montpellier HSC,969,Montpellier HSC,hsc-montpellier,Montpellier Hérault Sport Club,#000B4F,#FFFFFF,#FF6600
-59,d7a486cd,Nantes,France,FC Nantes,995,FC Nantes,fc-nantes,Football Club de Nantes,#004433,#FFFFFF,#FFFF00
-60,132ebc33,Nice,France,OGC Nice,417,OGC Nice,ogc-nizza,Olympique Gymnaste Club Nice Côte d'Azur,#FF0000,#FFFFFF,#000000
-61,1cbf5f9e,Nîmes,France,Nîmes Olympique,1160,Nîmes Olympique,olympique-nimes,Nîmes Olympique,#E40613,,
-62,e2d8892c,Paris Saint-Germain,France,Paris Saint-Germain,583,Paris Saint-Germain,fc-paris-saint-germain,Paris Saint-Germain Football Club,#00093F,#FFFFFF,#FF2000
-63,7fdd64e0,Reims,France,Stade Reims,1421,Stade Reims,stade-reims,Stade de Reims,#EE2223,#FFFFFF,
-64,b3072e00,Rennes,France,Stade Rennais FC,273,Stade Rennais FC,fc-stade-rennes,Stade Rennais Football Club,#e13327,#ffffff,#000000
-65,d298ef2c,Saint-Étienne,France,AS Saint-Étienne,618,AS Saint-Étienne,as-saint-etienne,Association sportive de Saint-Étienne Loire,#40b848,#ffffff,
-66,c0d3eab4,Strasbourg,France,RC Strasbourg Alsace,667,RC Strasbourg Alsace,racing-strassburg,Racing Club de Strasbourg Alsace,#0000FF,#FFFFFF,
-67,3f8c4b5f,Toulouse,France,FC Toulouse,415,FC Toulouse,fc-toulouse,Toulouse Football Club,#8d42d4,,
-68,54195385,Troyes,France,ES Troyes AC,1095,ES Troyes AC,es-troyes-ac,Espérance sportive Troyes Aube Champagn,#006EB2,#FFFFFF,#DC9D0F
-69,0cdc4311,Augsburg,Germany,FC Augsburg,167,FC Augsburg,fc-augsburg,FC Augsburg 1907,#BB3532,#006633,#FFFFFF
-70,c7a9f859,Bayer Leverkusen,Germany,Bayer 04 Leverkusen,15,Bayer 04 Leverkusen,bayer-04-leverkusen,Bayer 04 Leverkusen Fußball,#FF0000,#000000,
-71,054efa67,Bayern Munich,Germany,Bayern Munich,27,Bayern Munich,fc-bayern-munchen,FC Bayern München,#DB072D,#FFFFFF,
-72,add600ae,Dortmund,Germany,Borussia Dortmund,16,Borussia Dortmund,borussia-dortmund,Borussia Dortmund,#FDF105,#000000,
-73,b1278397,Düsseldorf,Germany,Fortuna Düsseldorf,38,Fortuna Düsseldorf,fortuna-dusseldorf,Düsseldorfer Turn- und Sportverein Fortuna 1895,#FF0000,#FFFFFF,
-74,f0ac8ee6,Eintracht Frankfurt,Germany,Eintracht Frankfurt,24,Eintracht Frankfurt,eintracht-frankfurt,Eintracht Frankfurt Fußball AG,#FF0000,#000000,#FFFFFF
-75,a486e511,Freiburg,Germany,SC Freiburg,60,SC Freiburg,sc-freiburg,Sport-Club Freiburg,#FF0000,#FFFFFF,
-76,26790c6a,Hamburger SV,Germany,Hamburger SV,41,Hamburger SV,hamburger-sv,Hamburger Sport Verein,#014495,#FFFFFF,#000000
-77,60b5e41f,Hannover 96,Germany,Hannover 96,42,Hannover 96,hannover-96,Hannoversche Sportverein von 1896,#009932,#FFFFFF,#000000
-78,2818f8bc,Hertha BSC,Germany,Hertha BSC,44,Hertha BSC,hertha-bsc,Hertha Berliner Sport-Club,#004CFF,#FFFFFF,
-79,033ea6b8,Hoffenheim,Germany,TSG 1899 Hoffenheim,533,TSG 1899 Hoffenheim,tsg-1899-hoffenheim,TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH,#0033CC,#FFFFFF,
-80,bc357bf7,Köln,Germany,1. FC Köln,3,1. FC Köln,1-fc-koln,1. Fußball-Club Köln,#ED1C23,#FFFFFF,
-81,a224b06a,Mainz 05,Germany,1. FSV Mainz 05,39,1.FSV Mainz 05,1-fsv-mainz-05,1. Fußball- und Sportverein Mainz 05,#FF0000,#FFFFFF,
-82,32f3ee20,Mönchengladbach,Germany,Borussia Mönchengladbach,18,Borussia Mönchengladbach,borussia-monchengladbach,Borussia Verein für Leibesübungen 1900 Mönchengladbach,#000000,#FFFFFF,#00CC00
-83,6f2c108c,Nürnberg,Germany,1. FC Nuremberg,4,1.FC Nuremberg,1-fc-nurnberg,1. Fußball-Club Nürnberg Verein für Leibesübungen,#990000,#FFFFFF,
-84,d9f93f02,Paderborn 07,Germany,SC Paderborn 07,127,SC Paderborn 07,sc-paderborn-07,SC Paderborn 07,#2b429c,,
-85,acbb6a5b,RB Leipzig,Germany,RB Leipzig,23826,RB Leipzig,rasenballsport-leipzig,RasenBallsport Leipzig,#FF0000,#FFFFFF,#000030
-86,c539e393,Schalke 04,Germany,FC Schalke 04,33,FC Schalke 04,fc-schalke-04,Fußballclub Gelsenkirchen-Schalke 04,#025FAC,#FFFFFF,
-87,598bc722,Stuttgart,Germany,Vfb Stuttgart,79,Vfb Stuttgart,vfb-stuttgart,,,,
-88,7a41008f,Union Berlin,Germany,1. FC Union Belin,89,1.FC Union Berlin,1-fc-union-berlin,,,,
-89,62add3bf,Werder Bremen,Germany,SV Werder Bremen,86,SV Werder Bremen,sv-werder-bremen,Sportverein Werder Bremen von 1899,#00924A,#FFFFFF,#0C4011
-90,4eaa11d7,Wolfsburg,Germany,Vfl Wolfsburg,82,Vfl Wolfsburg,vfl-wolfsburg,,,,
-91,d5348c80,AEK Athens,Greece,AEK Athens,2441,AEK Athens,aek-athen,PAE Athlitiki Enosi Konstantinoupoleos,#ffff00,#000000,
-92,2fdb4aef,Olympiacos,Greece,Olympiacos Piraeus,683,Olympiacos Piraeus,olympiakos-piraus,PAE Olympiakos Syndesmos Filathlon Peiraios,#FF0000,#FFFFFF,
-93,5a5e7874,PAOK,Greece,PAOK Thessaloniki,1091,PAOK Thessaloniki,paok-thessaloniki,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,#000000,#FFFFFF,
-94,6611f992,Ferencváros,Hungary,Ferencvárosi TC,279,Ferencvárosi TC,ferencvaros-budapest,Ferencvárosi Torna Club,#006600,#FFFFFF,
-95,a338349f,Vidi,Hungary,MOL Fehérvár FC,11107,MOL Fehérvár FC,videoton-fc,MOL Fehérvár FC,#990000,#000066,
-96,922493f3,Atalanta,Italy,Atalanta BC,800,Atalanta BC,atalanta-bergamo,Atalanta Bergamasca Calcio S.p.a.,#295cb0,#1e191a,#157a52
-97,4fcb34fd,Benevento,Italy,Benevento Calcio,4171,Benevento Calcio,benevento-calcio,Benevento Calcio SpA,#F0CA0E,#DB0000,
-98,1d8099f8,Bologna,Italy,Bologna FC 1909,1025,Bologna FC 1909,fc-bologna,Bologna Football Club 1909 S.p.A.,#ed0909,#483deb,
-99,4ef57aeb,Brescia,Italy,Brescia Calcio,19,Brescia Calcio,brescia-calcio,Brescia Calcio,#007FFF,#FFFFFF,
-100,c4260e09,Cagliari,Italy,Cagliari Calcio,1390,Cagliari Calcio,cagliari-calcio,Cagliari Calcio,#ab0a0a,#0f0f6b,
-101,cc919b35,Chievo,Italy,Chievo Verona,862,Chievo Verona,chievo-verona,Associazione Calcio Chievo Verona S.r.l.,#F0F027,#3910E0,
-102,3074d7b1,Crotone,Italy,FC Crotone,4083,FC Crotone,fc-crotone,Crotone Football Club S.r.l.,#d43333,#1d0d61,
-103,a3d88bd8,Empoli,Italy,FC Empoli,749,FC Empoli,fc-empoli,Empoli Football Club S.r.l.,#175eeb,#ffffff,
-104,421387cf,Fiorentina,Italy,ACF Fiorentina,430,ACF Fiorentina,ac-florenz,Associazione Calcio Fiorentina,#5C2180,#5C2180,
-105,6a7ad59d,Frosinone,Italy,Frosinone Calcio,8970,Frosinone Calcio,frosinone-calcio,Frosinone Calcio S.r.l.,#ffdd00,#004393,
-106,658bf2de,Genoa,Italy,Genoa CFC,252,Genoa CFC,fc-genua-1893,Genoa Cricket and Football Club S.p.A,#07078a,#e60707,
-107,0e72edf2,Hellas Verona,Italy,Hellas Verona,276,Hellas Verona,hellas-verona,Verona Hellas Football Club S.p.a.,#f2e63a,#5338de,
-108,d609edc0,Internazionale,Italy,Inter Milan,46,Inter Milan,inter-mailand,Football Club Internazionale Milano S.p.A.,#000000,#0055A0,#cfb013
-109,e0652b02,Juventus,Italy,Juventus FC,506,Juventus FC,juventus-turin,Juventus Football Club,#FCFCFC,#0A0909,
-110,7213da33,Lazio,Italy,SS Lazio,398,SS Lazio,lazio-rom,Società Sportiva Lazio S.p.A.,#dcecf2,#ffffff,
-111,ffcbe334,Lecce,Italy,US Lecce,1005,US Lecce,us-lecce,Unione Sportiva Lecce,#F7FF08,#E80000,#080857
-112,dc56fe14,Milan,Italy,AC Milan,5,AC Milan,ac-mailand,Associazione Calcio Milan S.p.A.,#b50909,#050505,
-113,d48ad4ff,Napoli,Italy,SSC Napoli,6195,SSC Napoli,ssc-neapel,Società Sportiva Calcio Napoli,#0080FF,,
-114,eab4234c,Parma,Italy,Parma Calcio 1913,130,Parma Calcio 1913,fc-parma,Parma Calcio 1913,#fffb00,#0000ff,
-115,cf74a709,Roma,Italy,AS Roma,12,AS Roma,as-rom,Associazione Sportiva Roma,#ffb22e,#9e142b,
-116,8ff9e3b3,Sampdoria,Italy,UC Sampdoria,1038,UC Sampdoria,uc-sampdoria,Unione Calcio Sampdoria,#515ee8,#f5ebeb,#e61c1c
-117,e2befd26,Sassuolo,Italy,US Sassuolo,6574,US Sassuolo,us-sassuolo,Unione Sportiva Sassuolo Calcio s.r.l.,#099902,#000000,
-118,1d2fe027,SPAL,Italy,SPAL,2722,SPAL,spal-2013,Società Polisportiva Ars et Labor,#0470c2,#ffffff,
-119,105360fe,Torino,Italy,Torino FC,416,Torino FC,fc-turin,Torino Calcio S.p.a.,#a62d2d,,
-120,04eea015,Udinese,Italy,Udinese Calcio,410,Udinese Calcio,udinese-calcio,Udinese Calcio S.p.A.,#000000,#ffffff,
-121,c72c8787,Astana FK,Kazakhstan,FK Astana 1964,22220,FC Astana,fk-astana,FK Astana,#FFFF00,#0000FF,
-122,baae133b,F91 Dudelange,Luxembourg,F91 Dudelange,853,F91 Dudelange,f91-dudelange,F91 Dudelange,#f2d21d,#37a8bf,#d93c3c
-123,19c3f8c4,Ajax,Netherlands,Ajax Amsterdam,610,Ajax Amsterdam,ajax-amsterdam,AFC Ajax Amsterdam,#FF0000,#FFFFFF,
-124,3986b791,AZ Alkmaar,Netherlands,AZ Alkmaar,1090,AZ Alkmaar,az-alkmaar,Alkmaar Zaanstreek,#FF0000,#FFFFFF,#000000
-125,fb4ca611,Feyenoord,Netherlands,Feyenoord Rotterdam,234,Feyenoord Rotterdam,feyenoord-rotterdam,Feyenoord Rotterdam,#ff0808,#FFFFFF,
-126,e334d850,PSV Eindhoven,Netherlands,PSV Eindhoven,383,PSV Eindhoven,psv-eindhoven,Eindhovense Voetbalvereniging Philips Sport Vereniging,#ED1C23,#FFFFFF,#000000
-127,90e37d3a,Rosenborg,Norway,Rosenborg BK,195,Rosenborg BK,rosenborg-trondheim,Rosenborg Ballklub,#000000,#FFFFFF,
-128,47b3e736,Sarpsborg 08,Norway,Sarpsborg 08 FF,10217,Sarpsborg 08 FF,sarpsborg-08-ff,Sarpsborg 08 Fotballforening,#2747A3,#FFFFFF,
-129,a77c513e,Benfica,Portugal,SL Benfica,294,SL Benfica,benfica-lissabon,Sport Lisboa e Benfica,#FF0000,#FFFFFF,
-130,69d84c29,Braga,Portugal,SC Braga,1075,SC Braga,sc-braga,Sporting Clube de Braga,#e80c0c,#ffffff,
-131,5e876ee6,Porto,Portugal,FC Porto,2503,FC Porto,boavista-porto-fc,Futebol Clube do Porto,#0037eb,#FFFFFF,
-132,13dc44fd,Sporting CP,Portugal,Sporting CP,336,Sporting CP,sporting-lissabon,Sporting Clube de Portugal,#008056,#FFFFFF,#F3C242
-133,3f319bc9,Vitória Guimarães,Portugal,Vitória Guimarães SC,2420,Vitória Guimarães SC,vitoria-guimaraes-sc,Vitória Sport Clube,#ffffff,#000000,#999999
-134,ff04e205,CFR Cluj,Romania,CFR Cluj,7769,CFR Cluj,cfr-cluj,Fotbal Club Căile Ferate Române 1907 Cluj,#CC0000,#FFFFFF,
-135,f0c0c2c2,CSKA Moscow,Russia,CSKA Moscow,2410,CSKA Moscow,zska-moskau,PFK CSKA Moskva,#da0d1b,#FFFFFF,#243185
-136,fa11a9cc,Krasnodar,Russia,FK Krasnodar,16704,FK Krasnodar,fk-krasnodar,FK Krasnodar,#000000,#158c43,
-137,5a8dc328,Lokomotiv Moscow,Russia,Lokomotiv Moscow,932,Lokomotiv Moscow,lokomotiv-moskau,FC Lokomotiv Moskau,#c6453d,#ffffff,#4e9a54
-138,8c635914,Spartak Moscow,Russia,Spartak Moscow,232,Spartak Moscow,spartak-moskau,FK Spartak Moskva,#dd0019,#FFFFFF,#dd0019
-139,98ce363d,Zenit,Russia,Zenit St. Petersburg,964,Zenit St. Petersburg,zenit-st-petersburg,AO FK Zenit Sankt-Peterburg,#016196,#FFFFFF,#21a5ef
-140,b81aa4fa,Celtic,Scotland,Celtic FC,371,Celtic FC,celtic-glasgow,The Celtic Football Club,#009933,#FFFFFF,#009933
-141,86b7acd2,Rangers,Scotland,Rangers FC,124,Rangers FC,glasgow-rangers,The Rangers Football Club,#0000FF,#FFFFFF,#FF0000
-142,dde3e804,Partizan,Serbia,FK Partizan Belgrade,669,FK Partizan Belgrade,k-partizan-belgrad,Fudbalski Klub Partizan Beograd,#000000,#FFFFFF,#8F8F8F
-143,099c6eb5,Red Star,Serbia,Red Star Belgrade,159,Red Star Belgrade,roter-stern-belgrad,Fudbalski Klub Crvena Zvezda Beograd,#F50C0C,#FFFFFF,#1500FF
-144,ae7f2f70,Slovan Bratislava,Slovakia,Slovan Bratislava,540,Slovan Bratislava,slovan-bratislava,ŠK Slovan Bratislava,#00a6ff,#ffffff,
-145,c16f1fe7,Spartak Trnava,Slovakia,Spartak Trnava,365,Spartak Trnava,spartak-trnava,FC Spartak Trnava,#f70505,#000000,#ffffff
-146,8d6fd021,Alavés,Spain,Deportivo Alavés,1108,Deportivo Alavés,deportivo-alaves,Deportivo Alavés S.A.D.,#048fd9,#ffffff,
-147,2b390eca,Athletic Club,Spain,Athletic Bilbao,621,Athletic Bilbao,athletic-bilbao,Athletic Club Bilbao,#FF0000,#FFFFFF,
-148,db3b9613,Atlético Madrid,Spain,Atlético Madrid,13,Atlético Madrid,atletico-madrid,Club Atlético de Madrid S.A.D.,#cf321f,#FFFFFF,#212b61
-149,206d90db,Barcelona,Spain,FC Barcelona,131,FC Barcelona,fc-barcelona,Futbol Club Barcelona,#004c99,#a60042,#ffee00
-150,f25da7fb,Celta Vigo,Spain,Celta de Vigo,940,Celta de Vigo,celta-vigo,Real Club Celta de Vigo S.A.D.,#99CCFF,#FFFFFF,
-151,2a60ed82,Deportivo La Coruña,Spain,Deportivo de La Coruña,897,Deportivo de La Coruña,deportivo-la-coruna,Real Club Deportivo de La Coruña S.A.D.,#0D4FC8,#FFFFFF,
-152,bea5c710,Eibar,Spain,SD Eibar,1533,SD Eibar,sd-eibar,Sociedad Deportiva Eibar S.A.D.,#e01212,#0707e0,
-153,a8661628,Espanyol,Spain,RCD Espanyol Barcelona,714,RCD Espanyol Barcelona,espanyol-barcelona,Reial Club Deportiu Espanyol de BARCELONA S.A.D.,#0000FF,#FFFFFF,
-154,7848bd64,Getafe,Spain,Getafe CF,3709,Getafe CF,fc-getafe,Getafe Club de Fútbol S.A.D. Team Dubai,#0000FF,#0000FF,
-155,9024a00a,Girona,Spain,Girona FC,12321,Girona FC,fc-girona,Girona Fútbol Club S.A.D.,#ff0000,#ffffff,
-156,a0435291,Granada,Spain,Granada CF,16795,Granada CF,fc-granada,Granada Club de Fútbol S.A.D.,#ff0000,#ffffff,
-157,c6c493e6,Huesca,Spain,SD Huesca,5358,SD Huesca,sd-huesca,Sociedad Deportiva Huesca,#283380,#CF122D,#FFFFFF
-158,0049d422,Las Palmas,Spain,UD Las Palmas,472,UD Las Palmas,ud-las-palmas,Unión Deportiva Las Palmas S.A.D.,#FFFF00,#0000FF,
-159,7c6f2c78,Leganés,Spain,CD Leganés,1244,CD Leganés,cd-leganes,Club Deportivo Leganés S.A.D.,#0000FF,#FFFFFF,
-160,9800b6a1,Levante,Spain,Levante UD,3368,Levante UD,ud-levante,Levante Unión Deportiva S.A.D.,#0000CC,#CC0000,
-161,1c896955,Málaga,Spain,Málaga CF,1084,Málaga CF,fc-malaga,Málaga Club de Fútbol S.A.D.,#3399FF,#FFFFFF,
-162,2aa12281,Mallorca,Spain,RCD Mallorca,237,RCD Mallorca,rcd-mallorca,Real Club Deportivo Mallorca S.A.D.,#FF0000,#000000,
-163,03c57e2b,Osasuna,Spain,CA Osasuna,331,CA Osasuna,ca-osasuna,Club Atlético Osasuna,#D91A21,#FFFFFF,#0A346F
-164,98e8af82,Rayo Vallecano,Spain,Rayo Vallecano,367,Rayo Vallecano,rayo-vallecano,Rayo Vallecano de Madrid S.A.D.,#FFFFFF,#FF0000,
-165,fc536746,Real Betis,Spain,Real Betis Balompié,150,Real Betis Balompié,real-betis-sevilla,Real Betis Balompié S.A.D.,#00954C,#FFFFFF,
-166,53a2f082,Real Madrid,Spain,Real Madrid,418,Real Madrid,real-madrid,Real Madrid Club de Fútbol,#FFFFFF,#004996,
-167,e31d1cd9,Real Sociedad,Spain,Real Sociedad,681,Real Sociedad,real-sociedad-san-sebastian,Real Sociedad de Fútbol S.A.D.,#0000ff,#ffffff,
-168,ad2be733,Sevilla,Spain,Sevilla FC,368,Sevilla FC,fc-sevilla,Sevilla Fútbol Club S.A.D.,#FF0000,#FFFFFF,
-169,dcc91a7b,Valencia,Spain,Valencia CF,1049,Valencia CF,fc-valencia,Valencia Club de Fútbol S.A.D.,#ffffff,#000000,#F57710
-170,17859612,Valladolid,Spain,Real Valladolid CF,366,Real Valladolid CF,real-valladolid,Real Valladolid Club de Fútbol S.A.D.,#7f2282,#ffffff,
-171,2a8183b3,Villarreal,Spain,Villarreal CF,1050,Villarreal CF,fc-villarreal,Villarreal Club de Fútbol S.A.D.,#FFFF00,#0073ff,
-172,f3d8c8b9,Malmö,Sweden,Malmö FF,496,Malmö FF,malmo-ff,Malmö Fotbollförening,#81C0FF,#FFFFFF,
-173,d3d9424a,Basel,Switzerland,FC Basel 1893,26,FC Basel 1893,c-basel-1893,FC Basel 1893 AG,#FF1433,#004093,
-174,4dcf77da,Lugano,Switzerland,FC Lugano,2790,FC Lugano,fc-lugano,FC Lugano,#000000,#ffffff,
-175,4b682260,Young Boys,Switzerland,BSC Young Boys,452,BSC Young Boys,bsc-young-boys,Berner Sport Club Young Boys,#ffd940,#000002,
-176,22a5a99c,Zürich,Switzerland,Grasshopper Club Zurich,504,FC Zürich,grasshopper-club-zurich,Grasshopper Club Zürich,#0064B9,#FDFDFB,
-177,92ce6559,Akhisar Belediyespor,Turkey,Akhisarspor,19771,Akhisarspor,akhisar-belediye-genclik-ve-spor,Akhisarspor,#006633,#FFFFFF,
-178,92ce6559,Akhisar Belediyespor,Turkey,Akhisarspor,19771,Akhisarspor,akhisar-belediye-genclik-ve-spor,Akhisarspor,#006633,#FFFFFF,
-179,0f9294bd,Beşiktaş,Turkey,Besiktas JK,114,Besiktas JK,besiktas-istanbul,Beşiktaş Jimnastik Kulübü,#000000,#FFFFFF,
-180,ae1e2d7d,Fenerbahçe,Turkey,Fenerbahce SK,36,Fenerbahce SK,fenerbahce-istanbul,Fenerbahçe Spor Kulübü,#FFED00,#002d72,
-181,ecd11ca2,Galatasaray,Turkey,Galatasaray SK,141,Galatasaray SK,galatasaray-istanbul,Galatasaray Spor Kulübü,#FFAE00,#FF0000,
-182,bff39cf5,İstanbul Başakşehir,Turkey,Istanbul Basaksehir FK,6890,Istanbul Basaksehir FK,istanbul-buyuksehir-belediyespor,İstanbul Başakşehir Futbol Kulübü,#ff5704,#163a52,#c3c7c6
-183,c8ad3091,Trabzonspor,Turkey,Trabzonspor,449,Trabzonspor,trabzonspor,Trabzonspor Kulübü,#681938,#2DB2EB,
-184,c734e22f,Dynamo Kyiv,Ukraine,Dynamo Kyiv,338,Dynamo Kyiv,dynamo-kiew,Fulbolniy Klub Dynamo Kyiv,#1070c2,#ffffff,#174493
-185,797d38d2,FC Oleksandriya,Ukraine,FK Oleksandriya,18303,FK Oleksandriya,pfk-oleksandria,vul. Shevchenka 58b,#ffc933,#26272b,
-186,e89d5a28,Shakhtar Donetsk,Ukraine,Shakhtar Donetsk,660,Shakhtar Donetsk,shakhtar-donetsk,FC Shakhtar Donetsk,#FF6600,#000000,
-187,99f258c2,Vorskla Poltava,Ukraine,Vorskla Poltava,2740,Vorskla Poltava,vorskla-poltava,maidan Nezalezhnosti 16,#006600,#FFFFFF,
-188,5bfb9659,Leeds United,England,Leeds United,399,Leeds United,leeds-united,Leeds United Association Football Club,#FAF7F7,#FFE100,#005FAA
-189,d2c87802,Lorient,France,FC Lorient,1158,FC Lorient,fc-lorient,Football Club Lorient-Bretagne Sud,#F58113,#231f20,
-190,fd4e0f7d,Lens,France,RC Lens,826,RC Lens,Racing Club de Lens,Racing Club de Lens,#FFDF00,#f50505,
-191,247c4b67,Arminia,Germany,Arminia Bielefeld,10,Arminia Bielefeld,arminia-bielefeld,Deutscher Sportclub Arminia Bielefeld,#000000,#FFFFFF,#0000FF
-192,68449f6d,Spezia,Italy,Spezia Calcio,3522,Spezia Calcio,spezia-calcio,Spezia Calcio S.r.l.,#ffffff,#000000,#6c93ba
-193,ee7c297c,Cádiz,Spain,Cádiz CF,2687,Cádiz CF,cadiz-cf,Cádiz Club de Fútbol S.A.D,#ffff00,#0000ff,
-194,6c8b07df,Elche,Spain,Elche CF,1531,Elche CF,fc-elche,Elche Club de Fútbol S.A.D.,#FFFFFF,#00CC33,
-195,3c4fb635,Midtjylland,Denmark,FC Midtjylland,865,FC Midtjylland,fc-midtjylland,Fodbold Club Midtjylland,#E00210,#FFFFFF,
+fbref,fbref_name,country,fcpython_name,transfermarkt,transfermarkt_name,transfermarkt_link,long_name,primary_color,secondary_color,alternate_color
+d20821dd,LASK,Austria,LASK,413,LASK,lask-linz,Linzer Athletik Sport Klub,#000000,#FFFFFF,#ff0000
+912e4c40,Rapid Wien,Austria,Rapid Vienna,170,Rapid Vienna,sk-rapid-wien,SK Rapid Wien,#008543,#FFFFFF,
+50f2a074,Red Bull Salzburg,Austria,Red Bull Salzburg,409,Red Bull Salzburg,red-bull-salzburg,FC Red Bull Salzburg,#E41349,#FFFFFF,
+426658a6,Wolfsberger AC,Austria,Wolfsberger AC,4441,Wolfsberger AC,wolfsberger-ac,RZ Pellets WAC,#000000,#FFFFFF,
+44b65410,Qarabağ Ağdam,Azerbaijan,Qarabağ Ağdam,10625,Qarabağ Ağdam,qarabag-agdam,FK Qarabag Agdam,#000000,#0f00e6,
+b983b638,BATE Borisov,Belarus,BATE Borisov,713,BATE Borisov,bate-borisov,Futbolni Klub BATE Borisov,#233d92,#fcda06,#233d92
+08ad393c,Anderlecht,Belgium,RSC Anderlecht,58,RSC Anderlecht,rsc-anderlecht,Royal Sporting Club Anderlecht,#FFFFFF,#660099,
+f1e6c5f1,Club Brugge,Belgium,Club Brugge KV,2282,Club Brugge KV,fc-brugge,Club Brugge Koninklijke Voetbalvereniging,#0000FF,#000000,
+1e972a99,Genk,Belgium,KRC Genk,1184,KRC Genk,krc-genk,Koninklijke Racing Club Genk,#FFFFFF,#0000FF,
+51e5a603,Gent,Belgium,KAA Gent,157,KAA Gent,kaa-gent,Koninklijke Atletiek Associatie Gent,#FFFFFF,#0033CC,
+33c6b26e,Standard Liège,Belgium,Standard Liège,3057,Standard Liège,standard-luttich,Royal Standard Club de Liège,#FFFFFF,#FF0000,
+488c6ba1,Ludogorets Razgrad,Bulgaria,PFK Ludogorets Razgrad,31614,PFK Ludogorets Razgrad,pfk-ludogorets-razgrad,PFC Ludogorets Razgrad,#005F27,#FFFFFF,
+edd0d381,Dinamo Zagreb,Croatia,GNK Dinamo Zagreb,419,GNK Dinamo Zagreb,gnk-dinamo-zagreb,GNK Dinamo Zagreb,#1c388c,#E32118,
+01689b1a,AÉK Lárnaka,Cyprus,AEK Larnaca,2156,AEK Larnaca,aek-larnaka,Athletiki Enosi Kition Larnakas,#017947,#F6EF1E,
+eab315a6,APOEL,Cyprus,APOEL Nicosia,2784,APOEL Nicosia,apoel-nikosia,Athletikos Podosferikos Omilos Ellinon Lefkosias,#2E3A90,#F5BC21,
+8dff1828,Apollon,Cyprus,Apollon Limassol,429,Apollon Limassol,apollon-limassol,Apollon Limassol,#416EB5,#FFFFFF,
+8424bb18,Jablonec,Czech Republic,FK Jablonec,1322,FK Jablonec,fk-jablonec,FK Jablonec a.s.,#07852F,#FFFFFF,#000000
+111cbfb1,Slavia Prague,Czech Republic,SK Slavia Prague,62,SK Slavia Prague,sk-slavia-prag,"SK Slavia Praha, a.s.",#b80707,#ffffff,
+02cd81bf,Viktoria Plzeň,Czech Republic,FC Viktoria Plzen,941,FC Viktoria Plzen,fc-viktoria-pilsen,"FC Viktoria Plzeň, a.s.",#FF0000,#0000FF,
+18050b20,FC Copenhagen,Denmark,FC Copenhagen,190,FC Copenhagen,fc-kopenhagen,Fodbold Club København,#BF2126,#FFFFFF,#375197
+18bb7c10,Arsenal,England,Arsenal FC,11,Arsenal FC,arsenal-fc,Arsenal Football Club,#EF0107,#FFFFFF,#9C824A
+8602292d,Aston Villa,England,Aston Villa,405,Aston Villa,aston-villa,Aston Villa Football Club,#670E36,#95BFE5,
+4ba7cbea,Bournemouth,England,AFC Bournemouth,989,AFC Bournemouth,afc-bournemouth,Association Football Club Bournemouth,#BF0C10,#0C0D0F,#BEA578
+d07537b9,Brighton & Hove Albion,England,Brighton & Hove Albion,1237,Brighton & Hove Albion,brighton-amp-hove-albion,Brighton and Hove Albion Football Club,#0054A6,#FFFFFF,
+943e8050,Burnley,England,Burnley FC,1132,Burnley FC,burnley-fc,Burnley Football Club,#660808,#73e8f0,#000000
+75fae011,Cardiff City,England,Cardiff City,603,Cardiff City,cardiff-city,Cardiff City Association Football Club,#0070B5,#D11524,
+cff3d9bb,Chelsea,England,Chelsea FC,631,Chelsea FC,chelsea-fc,Chelsea Football Club,#004793,#FFFFFF,
+47c64c55,Crystal Palace,England,Crystal Palace,873,Crystal Palace,crystal-palace,Crystal Palace Football Club,#1B458F,#C4122E,#A7A5A6
+d3fd31cc,Everton,England,Everton FC,29,Everton FC,everton-fc,Everton Football Club,#0052CC,#FFFFFF,
+fd962109,Fulham,England,Fulham FC,931,Fulham FC,fulham-fc,Fulham Football Club,#ffffff,#000000,#CC0000
+f5922ca5,Huddersfield Town,England,Huddersfield Town,1110,Huddersfield Town,huddersfield-town,Huddersfield Town Football Club,#0072CE,#FFFFFF,
+a2d435b3,Leicester City,England,Leicester City,1003,Leicester City,leicester-city,Leicester City Football Club,#0053A0,#FDBE11,
+822bd0ba,Liverpool,England,Liverpool FC,31,Liverpool FC,liverpool-fc,Liverpool Football Club,#D10022,#FFFFFF,#00A499
+b8fd03ef,Manchester City,England,Manchester City,281,Manchester City,manchester-city,Manchester City Football Club,#84BBFF,#FFFFFF,#84BBFF
+19538871,Manchester United,England,Manchester United,985,Manchester United,manchester-united,Manchester United Football Club,#D9020D,#FFFFFF,#000000
+b2b47a98,Newcastle United,England,Newcastle United,762,Newcastle United,newcastle-united,Newcastle United Football Club,#000000,#FFFFFF,
+1c781004,Norwich City,England,Norwich City,1123,Norwich City,norwich-city,Norwich City Football Club,#009900,#FFFF00,
+1df6b87e,Sheffield United,England,Sheffield United,350,Sheffield United,sheffield-united,Sheffield United Football Club,#ec2227,#010101,#ffffff
+33c895d4,Southampton,England,Southampton FC,180,Southampton FC,southampton-fc,Southampton Football Club,#FF0033,#FFFFFF,
+17892952,Stoke City,England,Stoke City,512,Stoke City,stoke-city,Stoke City Football Club,#FF0033,#FFFFFF,#FF0033
+fb10988f,Swansea City,England,Swansea City,2288,Swansea City,swansea-city,Swansea City Association Football Club,#000000,#ffffff,
+361ca564,Tottenham Hotspur,England,Tottenham Hotspur,148,Tottenham Hotspur,tottenham-hotspur,Tottenham Hotspur Football Club,#FFFFFF,#001C58,#ffffff
+2abfe087,Watford,England,Watford FC,1010,Watford FC,watford-fc,Watford Football Club,#fff71c,#e3002d,#000000
+60c6b05f,West Bromwich Albion,England,West Bromwich Albion,984,West Bromwich Albion,west-bromwich-albion,West Bromwich Albion Football Club,#000080,#FFFFFF,
+7c21e445,West Ham United,England,West Ham United,379,West Ham United,west-ham-united,West Ham United Football Club,#660033,#0099FF,
+8cec06e1,Wolverhampton Wanderers,England,Wolverhampton Wanderers,543,Wolverhampton Wanderers,wolverhampton-wanderers,Wolverhampton Wanderers Football Club,#FDB913,#231F20,
+25622401,Amiens,France,Amiens SC,1416,Amiens SC,sc-amiens,Amiens Sporting Club Football,#000000,#FFFFFF,
+69236f98,Angers,France,SCO Angers,1420,SCO Angers,sco-angers,Angers Sporting Club de l´Ouest,#000000,#FFFFFF,#FFFFFF
+123f3efe,Bordeaux,France,FC Girondins Bordeaux,40,FC Girondins Bordeaux,fc-girondins-bordeaux,Football Club des Girondins de Bordeaux,#000979,#FFFFFF,
+fb08dbb3,Brest,France,Stade Brest 29,3911,Stade Brest 29,stade-brest-29,Stade brestois 29,#FF0000,#FFFFFF,#231F20
+74229020,Caen,France,SM Caen,1162,SM Caen,sm-caen,Stade Malherbe Caen Calvados Basse-Normandie,#000050,#FFFFFF,#FF0000
+8dfb7350,Dijon,France,Dijon FCO,2969,Dijon FCO,fco-dijon,Dijon Football Côte d´Or,#E50001,#FFFFFF,#002C4C
+d41b5f53,Guingamp,France,EA Guingamp,855,EA Guingamp,ea-guingamp,En Avant de Guingamp,#000000,#FD1220,#FFFFFF
+cb188c0c,Lille,France,LOSC Lille,1082,LOSC Lille,osc-lille,Lille Olympique Sporting Club Lille Métropole,#F20505,#FFFFFF,
+d53c0b06,Lyon,France,Olympique Lyon,1041,Olympique Lyon,olympique-lyon,Olympique Lyonnais,#ffffff,#003781,#db0013
+5725cc7b,Marseille,France,Olympique Marseille,244,Olympique Marseille,olympique-marseille,Olympique de Marseille,#FFFFFF,#099FFF,
+f83960ae,Metz,France,FC Metz,347,FC Metz,fc-metz,Football Club de Metz,#6E0F12,#FFFFFF,
+fd6114db,Monaco,France,AS Monaco,162,AS Monaco,as-monaco,Association sportive de Monaco Football Club,#FF0000,#FFFFFF,
+281b0e73,Montpellier,France,Montpellier HSC,969,Montpellier HSC,hsc-montpellier,Montpellier Hérault Sport Club,#000B4F,#FFFFFF,#FF6600
+d7a486cd,Nantes,France,FC Nantes,995,FC Nantes,fc-nantes,Football Club de Nantes,#004433,#FFFFFF,#FFFF00
+132ebc33,Nice,France,OGC Nice,417,OGC Nice,ogc-nizza,Olympique Gymnaste Club Nice Côte d'Azur,#FF0000,#FFFFFF,#000000
+1cbf5f9e,Nîmes,France,Nîmes Olympique,1160,Nîmes Olympique,olympique-nimes,Nîmes Olympique,#E40613,,
+e2d8892c,Paris Saint-Germain,France,Paris Saint-Germain,583,Paris Saint-Germain,fc-paris-saint-germain,Paris Saint-Germain Football Club,#00093F,#FFFFFF,#FF2000
+7fdd64e0,Reims,France,Stade Reims,1421,Stade Reims,stade-reims,Stade de Reims,#EE2223,#FFFFFF,
+b3072e00,Rennes,France,Stade Rennais FC,273,Stade Rennais FC,fc-stade-rennes,Stade Rennais Football Club,#e13327,#ffffff,#000000
+d298ef2c,Saint-Étienne,France,AS Saint-Étienne,618,AS Saint-Étienne,as-saint-etienne,Association sportive de Saint-Étienne Loire,#40b848,#ffffff,
+c0d3eab4,Strasbourg,France,RC Strasbourg Alsace,667,RC Strasbourg Alsace,racing-strassburg,Racing Club de Strasbourg Alsace,#0000FF,#FFFFFF,
+3f8c4b5f,Toulouse,France,FC Toulouse,415,FC Toulouse,fc-toulouse,Toulouse Football Club,#8d42d4,,
+54195385,Troyes,France,ES Troyes AC,1095,ES Troyes AC,es-troyes-ac,Espérance sportive Troyes Aube Champagn,#006EB2,#FFFFFF,#DC9D0F
+0cdc4311,Augsburg,Germany,FC Augsburg,167,FC Augsburg,fc-augsburg,FC Augsburg 1907,#BB3532,#006633,#FFFFFF
+c7a9f859,Bayer Leverkusen,Germany,Bayer 04 Leverkusen,15,Bayer 04 Leverkusen,bayer-04-leverkusen,Bayer 04 Leverkusen Fußball,#FF0000,#000000,
+054efa67,Bayern Munich,Germany,Bayern Munich,27,Bayern Munich,fc-bayern-munchen,FC Bayern München,#DB072D,#FFFFFF,
+add600ae,Dortmund,Germany,Borussia Dortmund,16,Borussia Dortmund,borussia-dortmund,Borussia Dortmund,#FDF105,#000000,
+b1278397,Düsseldorf,Germany,Fortuna Düsseldorf,38,Fortuna Düsseldorf,fortuna-dusseldorf,Düsseldorfer Turn- und Sportverein Fortuna 1895,#FF0000,#FFFFFF,
+f0ac8ee6,Eintracht Frankfurt,Germany,Eintracht Frankfurt,24,Eintracht Frankfurt,eintracht-frankfurt,Eintracht Frankfurt Fußball AG,#FF0000,#000000,#FFFFFF
+a486e511,Freiburg,Germany,SC Freiburg,60,SC Freiburg,sc-freiburg,Sport-Club Freiburg,#FF0000,#FFFFFF,
+26790c6a,Hamburger SV,Germany,Hamburger SV,41,Hamburger SV,hamburger-sv,Hamburger Sport Verein,#014495,#FFFFFF,#000000
+60b5e41f,Hannover 96,Germany,Hannover 96,42,Hannover 96,hannover-96,Hannoversche Sportverein von 1896,#009932,#FFFFFF,#000000
+2818f8bc,Hertha BSC,Germany,Hertha BSC,44,Hertha BSC,hertha-bsc,Hertha Berliner Sport-Club,#004CFF,#FFFFFF,
+033ea6b8,Hoffenheim,Germany,TSG 1899 Hoffenheim,533,TSG 1899 Hoffenheim,tsg-1899-hoffenheim,TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH,#0033CC,#FFFFFF,
+bc357bf7,Köln,Germany,1. FC Köln,3,1. FC Köln,1-fc-koln,1. Fußball-Club Köln,#ED1C23,#FFFFFF,
+a224b06a,Mainz 05,Germany,1. FSV Mainz 05,39,1.FSV Mainz 05,1-fsv-mainz-05,1. Fußball- und Sportverein Mainz 05,#FF0000,#FFFFFF,
+32f3ee20,Mönchengladbach,Germany,Borussia Mönchengladbach,18,Borussia Mönchengladbach,borussia-monchengladbach,Borussia Verein für Leibesübungen 1900 Mönchengladbach,#000000,#FFFFFF,#00CC00
+6f2c108c,Nürnberg,Germany,1. FC Nuremberg,4,1.FC Nuremberg,1-fc-nurnberg,1. Fußball-Club Nürnberg Verein für Leibesübungen,#990000,#FFFFFF,
+d9f93f02,Paderborn 07,Germany,SC Paderborn 07,127,SC Paderborn 07,sc-paderborn-07,SC Paderborn 07,#2b429c,,
+acbb6a5b,RB Leipzig,Germany,RB Leipzig,23826,RB Leipzig,rasenballsport-leipzig,RasenBallsport Leipzig,#FF0000,#FFFFFF,#000030
+c539e393,Schalke 04,Germany,FC Schalke 04,33,FC Schalke 04,fc-schalke-04,Fußballclub Gelsenkirchen-Schalke 04,#025FAC,#FFFFFF,
+598bc722,Stuttgart,Germany,Vfb Stuttgart,79,Vfb Stuttgart,vfb-stuttgart,,,,
+7a41008f,Union Berlin,Germany,1. FC Union Belin,89,1.FC Union Berlin,1-fc-union-berlin,,,,
+62add3bf,Werder Bremen,Germany,SV Werder Bremen,86,SV Werder Bremen,sv-werder-bremen,Sportverein Werder Bremen von 1899,#00924A,#FFFFFF,#0C4011
+4eaa11d7,Wolfsburg,Germany,Vfl Wolfsburg,82,Vfl Wolfsburg,vfl-wolfsburg,,,,
+d5348c80,AEK Athens,Greece,AEK Athens,2441,AEK Athens,aek-athen,PAE Athlitiki Enosi Konstantinoupoleos,#ffff00,#000000,
+2fdb4aef,Olympiacos,Greece,Olympiacos Piraeus,683,Olympiacos Piraeus,olympiakos-piraus,PAE Olympiakos Syndesmos Filathlon Peiraios,#FF0000,#FFFFFF,
+5a5e7874,PAOK,Greece,PAOK Thessaloniki,1091,PAOK Thessaloniki,paok-thessaloniki,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,#000000,#FFFFFF,
+6611f992,Ferencváros,Hungary,Ferencvárosi TC,279,Ferencvárosi TC,ferencvaros-budapest,Ferencvárosi Torna Club,#006600,#FFFFFF,
+a338349f,Vidi,Hungary,MOL Fehérvár FC,11107,MOL Fehérvár FC,videoton-fc,MOL Fehérvár FC,#990000,#000066,
+922493f3,Atalanta,Italy,Atalanta BC,800,Atalanta BC,atalanta-bergamo,Atalanta Bergamasca Calcio S.p.a.,#295cb0,#1e191a,#157a52
+4fcb34fd,Benevento,Italy,Benevento Calcio,4171,Benevento Calcio,benevento-calcio,Benevento Calcio SpA,#F0CA0E,#DB0000,
+1d8099f8,Bologna,Italy,Bologna FC 1909,1025,Bologna FC 1909,fc-bologna,Bologna Football Club 1909 S.p.A.,#ed0909,#483deb,
+4ef57aeb,Brescia,Italy,Brescia Calcio,19,Brescia Calcio,brescia-calcio,Brescia Calcio,#007FFF,#FFFFFF,
+c4260e09,Cagliari,Italy,Cagliari Calcio,1390,Cagliari Calcio,cagliari-calcio,Cagliari Calcio,#ab0a0a,#0f0f6b,
+cc919b35,Chievo,Italy,Chievo Verona,862,Chievo Verona,chievo-verona,Associazione Calcio Chievo Verona S.r.l.,#F0F027,#3910E0,
+3074d7b1,Crotone,Italy,FC Crotone,4083,FC Crotone,fc-crotone,Crotone Football Club S.r.l.,#d43333,#1d0d61,
+a3d88bd8,Empoli,Italy,FC Empoli,749,FC Empoli,fc-empoli,Empoli Football Club S.r.l.,#175eeb,#ffffff,
+421387cf,Fiorentina,Italy,ACF Fiorentina,430,ACF Fiorentina,ac-florenz,Associazione Calcio Fiorentina,#5C2180,#5C2180,
+6a7ad59d,Frosinone,Italy,Frosinone Calcio,8970,Frosinone Calcio,frosinone-calcio,Frosinone Calcio S.r.l.,#ffdd00,#004393,
+658bf2de,Genoa,Italy,Genoa CFC,252,Genoa CFC,fc-genua-1893,Genoa Cricket and Football Club S.p.A,#07078a,#e60707,
+0e72edf2,Hellas Verona,Italy,Hellas Verona,276,Hellas Verona,hellas-verona,Verona Hellas Football Club S.p.a.,#f2e63a,#5338de,
+d609edc0,Internazionale,Italy,Inter Milan,46,Inter Milan,inter-mailand,Football Club Internazionale Milano S.p.A.,#000000,#0055A0,#cfb013
+e0652b02,Juventus,Italy,Juventus FC,506,Juventus FC,juventus-turin,Juventus Football Club,#FCFCFC,#0A0909,
+7213da33,Lazio,Italy,SS Lazio,398,SS Lazio,lazio-rom,Società Sportiva Lazio S.p.A.,#dcecf2,#ffffff,
+ffcbe334,Lecce,Italy,US Lecce,1005,US Lecce,us-lecce,Unione Sportiva Lecce,#F7FF08,#E80000,#080857
+dc56fe14,Milan,Italy,AC Milan,5,AC Milan,ac-mailand,Associazione Calcio Milan S.p.A.,#b50909,#050505,
+d48ad4ff,Napoli,Italy,SSC Napoli,6195,SSC Napoli,ssc-neapel,Società Sportiva Calcio Napoli,#0080FF,,
+eab4234c,Parma,Italy,Parma Calcio 1913,130,Parma Calcio 1913,fc-parma,Parma Calcio 1913,#fffb00,#0000ff,
+cf74a709,Roma,Italy,AS Roma,12,AS Roma,as-rom,Associazione Sportiva Roma,#ffb22e,#9e142b,
+8ff9e3b3,Sampdoria,Italy,UC Sampdoria,1038,UC Sampdoria,uc-sampdoria,Unione Calcio Sampdoria,#515ee8,#f5ebeb,#e61c1c
+e2befd26,Sassuolo,Italy,US Sassuolo,6574,US Sassuolo,us-sassuolo,Unione Sportiva Sassuolo Calcio s.r.l.,#099902,#000000,
+1d2fe027,SPAL,Italy,SPAL,2722,SPAL,spal-2013,Società Polisportiva Ars et Labor,#0470c2,#ffffff,
+105360fe,Torino,Italy,Torino FC,416,Torino FC,fc-turin,Torino Calcio S.p.a.,#a62d2d,,
+04eea015,Udinese,Italy,Udinese Calcio,410,Udinese Calcio,udinese-calcio,Udinese Calcio S.p.A.,#000000,#ffffff,
+c72c8787,Astana FK,Kazakhstan,FK Astana 1964,22220,FC Astana,fk-astana,FK Astana,#FFFF00,#0000FF,
+baae133b,F91 Dudelange,Luxembourg,F91 Dudelange,853,F91 Dudelange,f91-dudelange,F91 Dudelange,#f2d21d,#37a8bf,#d93c3c
+19c3f8c4,Ajax,Netherlands,Ajax Amsterdam,610,Ajax Amsterdam,ajax-amsterdam,AFC Ajax Amsterdam,#FF0000,#FFFFFF,
+3986b791,AZ Alkmaar,Netherlands,AZ Alkmaar,1090,AZ Alkmaar,az-alkmaar,Alkmaar Zaanstreek,#FF0000,#FFFFFF,#000000
+fb4ca611,Feyenoord,Netherlands,Feyenoord Rotterdam,234,Feyenoord Rotterdam,feyenoord-rotterdam,Feyenoord Rotterdam,#ff0808,#FFFFFF,
+e334d850,PSV Eindhoven,Netherlands,PSV Eindhoven,383,PSV Eindhoven,psv-eindhoven,Eindhovense Voetbalvereniging Philips Sport Vereniging,#ED1C23,#FFFFFF,#000000
+90e37d3a,Rosenborg,Norway,Rosenborg BK,195,Rosenborg BK,rosenborg-trondheim,Rosenborg Ballklub,#000000,#FFFFFF,
+47b3e736,Sarpsborg 08,Norway,Sarpsborg 08 FF,10217,Sarpsborg 08 FF,sarpsborg-08-ff,Sarpsborg 08 Fotballforening,#2747A3,#FFFFFF,
+a77c513e,Benfica,Portugal,SL Benfica,294,SL Benfica,benfica-lissabon,Sport Lisboa e Benfica,#FF0000,#FFFFFF,
+69d84c29,Braga,Portugal,SC Braga,1075,SC Braga,sc-braga,Sporting Clube de Braga,#e80c0c,#ffffff,
+5e876ee6,Porto,Portugal,FC Porto,2503,FC Porto,boavista-porto-fc,Futebol Clube do Porto,#0037eb,#FFFFFF,
+13dc44fd,Sporting CP,Portugal,Sporting CP,336,Sporting CP,sporting-lissabon,Sporting Clube de Portugal,#008056,#FFFFFF,#F3C242
+3f319bc9,Vitória Guimarães,Portugal,Vitória Guimarães SC,2420,Vitória Guimarães SC,vitoria-guimaraes-sc,Vitória Sport Clube,#ffffff,#000000,#999999
+ff04e205,CFR Cluj,Romania,CFR Cluj,7769,CFR Cluj,cfr-cluj,Fotbal Club Căile Ferate Române 1907 Cluj,#CC0000,#FFFFFF,
+f0c0c2c2,CSKA Moscow,Russia,CSKA Moscow,2410,CSKA Moscow,zska-moskau,PFK CSKA Moskva,#da0d1b,#FFFFFF,#243185
+fa11a9cc,Krasnodar,Russia,FK Krasnodar,16704,FK Krasnodar,fk-krasnodar,FK Krasnodar,#000000,#158c43,
+5a8dc328,Lokomotiv Moscow,Russia,Lokomotiv Moscow,932,Lokomotiv Moscow,lokomotiv-moskau,FC Lokomotiv Moskau,#c6453d,#ffffff,#4e9a54
+8c635914,Spartak Moscow,Russia,Spartak Moscow,232,Spartak Moscow,spartak-moskau,FK Spartak Moskva,#dd0019,#FFFFFF,#dd0019
+98ce363d,Zenit,Russia,Zenit St. Petersburg,964,Zenit St. Petersburg,zenit-st-petersburg,AO FK Zenit Sankt-Peterburg,#016196,#FFFFFF,#21a5ef
+b81aa4fa,Celtic,Scotland,Celtic FC,371,Celtic FC,celtic-glasgow,The Celtic Football Club,#009933,#FFFFFF,#009933
+86b7acd2,Rangers,Scotland,Rangers FC,124,Rangers FC,glasgow-rangers,The Rangers Football Club,#0000FF,#FFFFFF,#FF0000
+dde3e804,Partizan,Serbia,FK Partizan Belgrade,669,FK Partizan Belgrade,k-partizan-belgrad,Fudbalski Klub Partizan Beograd,#000000,#FFFFFF,#8F8F8F
+099c6eb5,Red Star,Serbia,Red Star Belgrade,159,Red Star Belgrade,roter-stern-belgrad,Fudbalski Klub Crvena Zvezda Beograd,#F50C0C,#FFFFFF,#1500FF
+ae7f2f70,Slovan Bratislava,Slovakia,Slovan Bratislava,540,Slovan Bratislava,slovan-bratislava,ŠK Slovan Bratislava,#00a6ff,#ffffff,
+c16f1fe7,Spartak Trnava,Slovakia,Spartak Trnava,365,Spartak Trnava,spartak-trnava,FC Spartak Trnava,#f70505,#000000,#ffffff
+8d6fd021,Alavés,Spain,Deportivo Alavés,1108,Deportivo Alavés,deportivo-alaves,Deportivo Alavés S.A.D.,#048fd9,#ffffff,
+2b390eca,Athletic Club,Spain,Athletic Bilbao,621,Athletic Bilbao,athletic-bilbao,Athletic Club Bilbao,#FF0000,#FFFFFF,
+db3b9613,Atlético Madrid,Spain,Atlético Madrid,13,Atlético Madrid,atletico-madrid,Club Atlético de Madrid S.A.D.,#cf321f,#FFFFFF,#212b61
+206d90db,Barcelona,Spain,FC Barcelona,131,FC Barcelona,fc-barcelona,Futbol Club Barcelona,#004c99,#a60042,#ffee00
+f25da7fb,Celta Vigo,Spain,Celta de Vigo,940,Celta de Vigo,celta-vigo,Real Club Celta de Vigo S.A.D.,#99CCFF,#FFFFFF,
+2a60ed82,Deportivo La Coruña,Spain,Deportivo de La Coruña,897,Deportivo de La Coruña,deportivo-la-coruna,Real Club Deportivo de La Coruña S.A.D.,#0D4FC8,#FFFFFF,
+bea5c710,Eibar,Spain,SD Eibar,1533,SD Eibar,sd-eibar,Sociedad Deportiva Eibar S.A.D.,#e01212,#0707e0,
+a8661628,Espanyol,Spain,RCD Espanyol Barcelona,714,RCD Espanyol Barcelona,espanyol-barcelona,Reial Club Deportiu Espanyol de BARCELONA S.A.D.,#0000FF,#FFFFFF,
+7848bd64,Getafe,Spain,Getafe CF,3709,Getafe CF,fc-getafe,Getafe Club de Fútbol S.A.D. Team Dubai,#0000FF,#0000FF,
+9024a00a,Girona,Spain,Girona FC,12321,Girona FC,fc-girona,Girona Fútbol Club S.A.D.,#ff0000,#ffffff,
+a0435291,Granada,Spain,Granada CF,16795,Granada CF,fc-granada,Granada Club de Fútbol S.A.D.,#ff0000,#ffffff,
+c6c493e6,Huesca,Spain,SD Huesca,5358,SD Huesca,sd-huesca,Sociedad Deportiva Huesca,#283380,#CF122D,#FFFFFF
+0049d422,Las Palmas,Spain,UD Las Palmas,472,UD Las Palmas,ud-las-palmas,Unión Deportiva Las Palmas S.A.D.,#FFFF00,#0000FF,
+7c6f2c78,Leganés,Spain,CD Leganés,1244,CD Leganés,cd-leganes,Club Deportivo Leganés S.A.D.,#0000FF,#FFFFFF,
+9800b6a1,Levante,Spain,Levante UD,3368,Levante UD,ud-levante,Levante Unión Deportiva S.A.D.,#0000CC,#CC0000,
+1c896955,Málaga,Spain,Málaga CF,1084,Málaga CF,fc-malaga,Málaga Club de Fútbol S.A.D.,#3399FF,#FFFFFF,
+2aa12281,Mallorca,Spain,RCD Mallorca,237,RCD Mallorca,rcd-mallorca,Real Club Deportivo Mallorca S.A.D.,#FF0000,#000000,
+03c57e2b,Osasuna,Spain,CA Osasuna,331,CA Osasuna,ca-osasuna,Club Atlético Osasuna,#D91A21,#FFFFFF,#0A346F
+98e8af82,Rayo Vallecano,Spain,Rayo Vallecano,367,Rayo Vallecano,rayo-vallecano,Rayo Vallecano de Madrid S.A.D.,#FFFFFF,#FF0000,
+fc536746,Real Betis,Spain,Real Betis Balompié,150,Real Betis Balompié,real-betis-sevilla,Real Betis Balompié S.A.D.,#00954C,#FFFFFF,
+53a2f082,Real Madrid,Spain,Real Madrid,418,Real Madrid,real-madrid,Real Madrid Club de Fútbol,#FFFFFF,#004996,
+e31d1cd9,Real Sociedad,Spain,Real Sociedad,681,Real Sociedad,real-sociedad-san-sebastian,Real Sociedad de Fútbol S.A.D.,#0000ff,#ffffff,
+ad2be733,Sevilla,Spain,Sevilla FC,368,Sevilla FC,fc-sevilla,Sevilla Fútbol Club S.A.D.,#FF0000,#FFFFFF,
+dcc91a7b,Valencia,Spain,Valencia CF,1049,Valencia CF,fc-valencia,Valencia Club de Fútbol S.A.D.,#ffffff,#000000,#F57710
+17859612,Valladolid,Spain,Real Valladolid CF,366,Real Valladolid CF,real-valladolid,Real Valladolid Club de Fútbol S.A.D.,#7f2282,#ffffff,
+2a8183b3,Villarreal,Spain,Villarreal CF,1050,Villarreal CF,fc-villarreal,Villarreal Club de Fútbol S.A.D.,#FFFF00,#0073ff,
+f3d8c8b9,Malmö,Sweden,Malmö FF,496,Malmö FF,malmo-ff,Malmö Fotbollförening,#81C0FF,#FFFFFF,
+d3d9424a,Basel,Switzerland,FC Basel 1893,26,FC Basel 1893,c-basel-1893,FC Basel 1893 AG,#FF1433,#004093,
+4dcf77da,Lugano,Switzerland,FC Lugano,2790,FC Lugano,fc-lugano,FC Lugano,#000000,#ffffff,
+4b682260,Young Boys,Switzerland,BSC Young Boys,452,BSC Young Boys,bsc-young-boys,Berner Sport Club Young Boys,#ffd940,#000002,
+22a5a99c,Zürich,Switzerland,Grasshopper Club Zurich,504,FC Zürich,grasshopper-club-zurich,Grasshopper Club Zürich,#0064B9,#FDFDFB,
+92ce6559,Akhisar Belediyespor,Turkey,Akhisarspor,19771,Akhisarspor,akhisar-belediye-genclik-ve-spor,Akhisarspor,#006633,#FFFFFF,
+92ce6559,Akhisar Belediyespor,Turkey,Akhisarspor,19771,Akhisarspor,akhisar-belediye-genclik-ve-spor,Akhisarspor,#006633,#FFFFFF,
+0f9294bd,Beşiktaş,Turkey,Besiktas JK,114,Besiktas JK,besiktas-istanbul,Beşiktaş Jimnastik Kulübü,#000000,#FFFFFF,
+ae1e2d7d,Fenerbahçe,Turkey,Fenerbahce SK,36,Fenerbahce SK,fenerbahce-istanbul,Fenerbahçe Spor Kulübü,#FFED00,#002d72,
+ecd11ca2,Galatasaray,Turkey,Galatasaray SK,141,Galatasaray SK,galatasaray-istanbul,Galatasaray Spor Kulübü,#FFAE00,#FF0000,
+bff39cf5,İstanbul Başakşehir,Turkey,Istanbul Basaksehir FK,6890,Istanbul Basaksehir FK,istanbul-buyuksehir-belediyespor,İstanbul Başakşehir Futbol Kulübü,#ff5704,#163a52,#c3c7c6
+c8ad3091,Trabzonspor,Turkey,Trabzonspor,449,Trabzonspor,trabzonspor,Trabzonspor Kulübü,#681938,#2DB2EB,
+c734e22f,Dynamo Kyiv,Ukraine,Dynamo Kyiv,338,Dynamo Kyiv,dynamo-kiew,Fulbolniy Klub Dynamo Kyiv,#1070c2,#ffffff,#174493
+797d38d2,FC Oleksandriya,Ukraine,FK Oleksandriya,18303,FK Oleksandriya,pfk-oleksandria,vul. Shevchenka 58b,#ffc933,#26272b,
+e89d5a28,Shakhtar Donetsk,Ukraine,Shakhtar Donetsk,660,Shakhtar Donetsk,shakhtar-donetsk,FC Shakhtar Donetsk,#FF6600,#000000,
+99f258c2,Vorskla Poltava,Ukraine,Vorskla Poltava,2740,Vorskla Poltava,vorskla-poltava,maidan Nezalezhnosti 16,#006600,#FFFFFF,
+5bfb9659,Leeds United,England,Leeds United,399,Leeds United,leeds-united,Leeds United Association Football Club,#FAF7F7,#FFE100,#005FAA
+d2c87802,Lorient,France,FC Lorient,1158,FC Lorient,fc-lorient,Football Club Lorient-Bretagne Sud,#F58113,#231f20,
+fd4e0f7d,Lens,France,RC Lens,826,RC Lens,Racing Club de Lens,Racing Club de Lens,#FFDF00,#f50505,
+247c4b67,Arminia,Germany,Arminia Bielefeld,10,Arminia Bielefeld,arminia-bielefeld,Deutscher Sportclub Arminia Bielefeld,#000000,#FFFFFF,#0000FF
+68449f6d,Spezia,Italy,Spezia Calcio,3522,Spezia Calcio,spezia-calcio,Spezia Calcio S.r.l.,#ffffff,#000000,#6c93ba
+ee7c297c,Cádiz,Spain,Cádiz CF,2687,Cádiz CF,cadiz-cf,Cádiz Club de Fútbol S.A.D,#ffff00,#0000ff,
+6c8b07df,Elche,Spain,Elche CF,1531,Elche CF,fc-elche,Elche Club de Fútbol S.A.D.,#FFFFFF,#00CC33,
+3c4fb635,Midtjylland,Denmark,FC Midtjylland,865,FC Midtjylland,fc-midtjylland,Fodbold Club Midtjylland,#E00210,#FFFFFF,
+46024eeb,Philadelphia Union,USA,Philadelphia Union,25467,Philadelphia Union,philadelphia-union,Philadelphia Union,#001B2E,#E6D39F,
+130f43fa,Toronto FC,USA,Toronto FC,11141,Toronto FC,toronto-fc,Toronto FC,#D80016,#313F49,
+529ba333,Columbus Crew,USA,Columbus Crew SC,813,Columbus Crew SC,columbus-crew,Columbus Crew,#000000,#FFDB00,
+46ef01d0,Orlando City,USA,Orlando City,45604,Orlando City SC,orlando-city-sc,Orlando City Soccer Club,#6A1FA1,#FFE18D,
+64e81410,New York City FC,USA,NYCFC,40058,New York City FC,new-york-city-fc,New York City Football Club,#0C1C43,#53ADEB,
+69a0fb10,New York Red Bulls,USA,New York Red Bulls,623,New York Red Bulls,new-york-red-bulls,Red Bull New York,#D50031,#012055,#FFC800
+35f1b818,Nashville SC,USA,Nashville SC,63966,Nashville SC,nashville-mls-team,Nashville Soccer Club,#EDEB00,#100E48,
+3c079def,New England Revolution,USA,New England Revolution,626,New England Revolution,new-england-revolution,New England Revolution,#0A2141,#D80016,
+fc22273c,Montreal Impact,USA,Montreal Impact,4078,Club de Foot Montréal,montreal-impact,Montreal Impact Football Club,#122089,#000000,#FFFFFF
+cb8b86a2,Inter Miami,USA,Inter Miami CF,69261,Inter Miami CF,inter-miami-cf,Club Internacional de Fútbol Miami,#FFB2CE,#202322,
+f9940243,Chicago Fire,USA,Chicago Fire FC,432,Chicago Fire FC,chicago-fire,Chicago Fire Soccer Club,#AF2626,#0A174A,#8A8D8F
+1ebc1a5b,Atlanta United,USA,Atlanta United,51663,Atlanta United FC,atlanta-united-fc,Atlanta United Football Club,#8C0000,#221E1F,#AB9961
+44117292,D.C. United,USA,D.C. United,2440,D.C. United,d-c-united,D.C. United,#000000,#DD0000,#FFFFFF
+e9ea41b2,FC Cincinnati,USA,FC Cincinnati,51772,FC Cincinnati,fc-cincinnati,FC Cincinnati,#002D8C,#FF3B00,
+4acb0537,Sporting KC,USA,Sporting Kansas City,4284,Sporting Kansas City,sporting-kansas-city,Sporting Kansas City,#A4BBD7,#0A2141,#787775
+6218ebd4,Seattle Sounders FC,USA,Seattle Sounders FC,9636,Seattle Sounders FC,seattle-sounders-fc,Seattle Sounders FC,#4F8A10,#11568C,#212930
+d076914e,Portland Timbers,USA,Portland Timbers,4291,Portland Timbers,portland-timbers,Portland Timbers,#004812,#EBE72B,
+99ea75a6,Minnesota United,USA,Minnesota United FC,56089,Minnesota United FC,minnesota-united-fc,Minnesota United FC,#FFFFFF,#8ECFE7,#231E20
+15cf8f40,FC Dallas,USA,FC Dallas,8816,FC Dallas,fc-dallas,FC Dallas,#CF0032,#07175C,
+81d817a3,Los Angeles FC,USA,LAFC,51828,Los Angeles FC,los-angeles-football-club,Los Angeles Football Club,#000000,#CA9D65,
+ca460650,San Jose Earthquakes,USA,San Jose Earthquakes,218,San Jose Earthquakes,san-jose-earthquakes,San Jose Earthquakes,#0051BA,#000000,#B1B4B2
+415b4465,Colorado Rapids,USA,Colorado Rapids,1247,Colorado Rapids,colorado-rapids,Colorado Rapids,#91022D,#85B7EA,#8A8D8F
+ab41cb90,Vancouver Whitecaps,USA,Vancouver Whitecaps FC,6321,Vancouver Whitecaps FC,vancouver-whitecaps,Vancouver Whitecaps FC,#12264C,#85B7EA,
+d8b46897,LA Galaxy,USA,Los Angeles Galaxy,1061,Los Angeles Galaxy,los-angeles-galaxy,Los Angeles Galaxy,#00245D,#F1AA00,
+f7d86a43,Real Salt Lake,USA,Real Salt Lake City,6643,Real Salt Lake City,real-salt-lake-city,Real Salt Lake,#A50531,#013474,#F2D11A
+0d885416,Houston Dynami,USA,Houston Dynamo,9168,Houston Dynamo FC,houston-dynamo,Houston Dynamo,#F36600,#2E2926,
+,Austin FC,USA,Austin FC,72309,Austin FC,austin-fc,Austin Football Club,#00B140,#000000,
+e4a9d483,Dundalk,Ireland,Dundalk FC,6066,Dundalk FC,dundalk-fc,Dundalk Football Club,#FFFFFF,#CC282D,#000000
+174bd5a0,Molde,Norway,Molde FK,687,Molde FK,molde-fk,Molde Fotballklubb,#3366FF,#FFFFFF,
+25dbe099,Rijeka,Croatia,HNK Rijeka,144,HNK Rijeka,hnk-rijeka,Hrvatski Nogometni Klub Rijeka,#DDBE80,#FFFFFF,#38A1CE
+fdba14df,Lech Poznań,Poland,Lech Poznan,238,Lech Poznan,ech-poznań,KKS Lech Poznań Spółka Akcyjna,#004B92,#FFFFFF,
+cbde2682,CSKA Sofia,Bulgaria,CSKA Sofia,208,CSKA-Sofia,zska-sofia,ПФК ЦСКА София,#B3040C,#FFFFFF,
+133013ee,Hapoel Be'er Sheva,Israel,Hapoel Beer Sheva,2976,Hapoel Beer Sheva,hapoel-beer-sheva,Hapoel Beer Sheva FC,#FF0000,#FFFFFF,#5EBFFF
+15e031af,AC Omonia,Cyprus,Omonia Nicosia,829,Omonia Nicosia,omonia-nikosia,Athlitikos Syllogos Omonoia Lefkosias,#147800,#FFFFFF,
+946a30cb,Zorya Luhansk,Ukraine,Zorya Lugansk,10690,Zorya Lugansk,orya-lugansk,FK Zarya Lugansk,#000000,#FFFFFF,
+946a30cb,Zorya Luhansk,Ukraine,Zorya Lugansk,10690,Zorya Lugansk,orya-lugansk,FK Zarya Lugansk,#000000,#FFFFFF,
+2c9bebcd,Slovan Liberec,Czech Republic,FC Slovan Liberec,697,FC Slovan Liberec,fc-slovan-liberec,,,,
+ecb862be,Sparta Prague,Czech Republic,AC Sparta Prague,197,AC Sparta Prague,ac-sparta-prag,"AC Sparta Praha, a.s.",#0C18C9,#DEA335,#B31616
+c63f6c0c,Sivasspor,Turkey,Sivasspor,2381,Sivasspor,sivasspor,Sivasspor Kulübü,#FC0505,#FFFFFF,
+c2e6b53b,Antwerp,Belgium,Royal Antwerp FC,1096,Royal Antwerp FC,royal-fc-antwerpen,Royal Antwerp Football Club,#FFFFFF,#FF0000,
+04c011d8,Maccabi Tel Aviv,Israel,Maccabi Tel Aviv,119,Maccabi Tel Aviv,maccabi-tel-aviv,Maccabi Tel Aviv F.C.,#123163,#FFFF00,#FFFFFF

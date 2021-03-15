@@ -1,15 +1,3 @@
-Removed for no advanced stats
-/en/matches/8c22ccee/Dinamo-Zagreb-Spartak-Trnava-November-8-2018-Europa-League
-
-Removed for COVID cancellation
-Ligue 1 3/13/20 - 5/23/20
-/en/matches/8da5748e/Getafe-Internazionale-March-19-2020-Europa-League
-/en/matches/a99d6609/Roma-Sevilla-March-19-2020-Europa-League
-
-Removed for missing keepr stats
-/en/matches/94889482/Strasbourg-Lille-August-13-2017-Ligue-1 (no Lille keeper)
-
-
 Included but left blank
 Missing team stats
 /en/matches/7011948c/Leganes-Espanyol-May-12-2019-La-Liga (no interceptions)

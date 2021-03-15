@@ -1,8 +1,0 @@
-seaborn-dev
-numpy-dev
-matplotlib-dev
-pandas-dev
-js2xml-dev
-requests-dev
-beautifulsoup4-dev
-python_dateutil-dev
