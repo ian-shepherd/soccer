@@ -121,7 +121,7 @@ def load_data():
     v_player_match_stats_fact = v_player_match_stats_fact.drop(columns=['pAdj'])
 
     # trans_mv_fact
-    trans_mv_fact = pd.read_csv(dataFolder + 'trans_mv_fact.csv')
+    trans_mv_fact = pd.read_csv(dataFolder + 'trans_mv_fact.csv' + '?raw=true')
     trans_mv_fact['date'] = pd.to_datetime(trans_mv_fact['date']).dt.date
     
     # lists
