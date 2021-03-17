@@ -47671,3 +47671,71 @@ id,season,date,left,joined,value,fee,future,loan,loan_fee,free
 776798.0,19/20,2020-03-09,Thonon Évian Grand Genève FC U19,FC MAS Taborsko,,,N,N,,N
 776798.0,20/21,2020-08-03,FC MAS Taborsko,SK Slavia Prague B,,115000.0,N,N,,N
 776798.0,20/21,2020-10-01,SK Slavia Prague B,SK Slavia Prague,,,N,N,,N
+175836.0,09/10,2009-07-01,Elche CF U19,Torrellano Illice (liq.),,,N,N,,N
+175836.0,11/12,2011-07-01,Torrellano Illice (liq.),Orihuela CF,,0.0,N,N,,Y
+175836.0,12/13,2012-07-01,Orihuela CF,Elche Ilicitano,,0.0,N,N,,Y
+175836.0,14/15,2014-07-16,Elche Ilicitano,Girona FC,,0.0,N,Y,0.0,N
+175836.0,14/15,2015-06-30,Girona FC,Elche Ilicitano,500000.0,0.0,N,Y,0.0,N
+175836.0,15/16,2015-07-01,Elche Ilicitano,Elche CF,500000.0,,N,N,,N
+175836.0,15/16,2016-01-26,Elche CF,Málaga CF,800000.0,200000.0,N,Y,200000.0,N
+175836.0,15/16,2016-06-30,Málaga CF,Elche CF,1000000.0,0.0,N,Y,0.0,N
+175836.0,16/17,2016-07-01,Elche CF,Málaga CF,1000000.0,0.0,N,N,,Y
+175836.0,16/17,2016-07-15,Málaga CF,Girona FC,1000000.0,0.0,N,Y,0.0,N
+175836.0,16/17,2017-06-30,Girona FC,Málaga CF,800000.0,0.0,N,Y,0.0,N
+175836.0,17/18,2018-01-29,Málaga CF,Albacete Balompié,600000.0,0.0,N,Y,0.0,N
+175836.0,17/18,2018-06-30,Albacete Balompié,Málaga CF,500000.0,0.0,N,Y,0.0,N
+175836.0,20/21,2020-09-22,Málaga CF,Elche CF,650000.0,0.0,N,N,,Y
+214928.0,14/15,2014-07-01,Manchester City U18,Manchester City U21,,,N,N,,N
+214928.0,16/17,2016-08-31,Manchester City U23,Bury FC,,0.0,N,Y,0.0,N
+214928.0,16/17,2017-05-31,Bury FC,Manchester City U23,250000.0,0.0,N,Y,0.0,N
+214928.0,17/18,2017-08-31,Manchester City U23,Oldham Athletic,250000.0,0.0,N,Y,0.0,N
+214928.0,17/18,2018-05-31,Oldham Athletic,Manchester City U23,250000.0,0.0,N,Y,0.0,N
+214928.0,18/19,2018-08-02,Manchester City U23,Sheffield United,250000.0,0.0,N,N,,Y
+214928.0,19/20,2020-01-30,Sheffield United,Bolton Wanderers,250000.0,0.0,N,Y,0.0,N
+214928.0,19/20,2020-05-31,Bolton Wanderers,Sheffield United,250000.0,0.0,N,Y,0.0,N
+227347.0,17/18,2017-07-01,CSKA-Sofia U19,CSKA-Sofia,,,N,N,,N
+227347.0,20/21,2021-02-01,CSKA-Sofia,Bologna FC 1909,1000000.0,500000.0,N,Y,500000.0,N
+227347.0,20/21,2021-06-30,Bologna FC 1909,CSKA-Sofia,1000000.0,0.0,Y,Y,0.0,N
+232320.0,12/13,2012-07-01,Schwarz-Weiß Essen U17,VfL Bochum U17,,0.0,N,N,,Y
+232320.0,13/14,2013-07-01,VfL Bochum U17,VfL Bochum U19,,,N,N,,N
+232320.0,15/16,2015-07-01,VfL Bochum U19,Borussia Dortmund II,,0.0,N,N,,Y
+232320.0,17/18,2017-07-01,Borussia Dortmund II,Holstein Kiel,150000.0,,N,N,,N
+232320.0,19/20,2019-07-01,Holstein Kiel,VfB Stuttgart,1000000.0,800000.0,N,N,,N
+256267.0,12/13,2013-01-28,KF Liria Prizren,KF Teuta,,,N,N,,N
+256267.0,13/14,2014-01-04,KF Teuta,KS Besa Kavajë,75000.0,0.0,N,Y,0.0,N
+256267.0,13/14,2014-06-30,KS Besa Kavajë,KF Teuta,150000.0,0.0,N,Y,0.0,N
+256267.0,14/15,2014-08-19,KF Teuta,Giresunspor,150000.0,0.0,N,N,,Y
+256267.0,16/17,2016-07-01,Giresunspor,Genclerbirligi Ankara,800000.0,550000.0,N,N,,N
+256267.0,17/18,2018-01-11,Genclerbirligi Ankara,Caykur Rizespor,900000.0,500000.0,N,N,,N
+256267.0,19/20,2019-07-07,Caykur Rizespor,Fenerbahce SK,2500000.0,5600000.0,N,N,,N
+256267.0,20/21,2020-09-15,Fenerbahce SK,SS Lazio,12000000.0,18500000.0,N,N,,N
+365565.0,15/16,2015-07-01,Crotone Youth,Crotone Primavera,,,N,N,,N
+365565.0,16/17,2016-07-01,Crotone Primavera,FC Crotone,175000.0,,N,N,,N
+365565.0,17/18,2018-01-19,FC Crotone,Rende Calcio 1968,175000.0,0.0,N,Y,0.0,N
+365565.0,17/18,2018-06-30,Rende Calcio 1968,FC Crotone,200000.0,0.0,N,Y,0.0,N
+424042.0,15/16,2015-07-01,Club Atlético Boca Juniors U20,Club Atlético Boca Juniors II,,,N,N,,N
+424042.0,17/18,2018-01-10,Club Atlético Boca Juniors II,Defensa y Justicia,300000.0,0.0,N,Y,0.0,N
+424042.0,18/19,2018-12-31,Defensa y Justicia,Club Atlético Boca Juniors II,750000.0,0.0,N,Y,0.0,N
+424042.0,18/19,2019-01-25,Club Atlético Boca Juniors II,Club Atlético Rosario Central,750000.0,0.0,N,Y,0.0,N
+424042.0,19/20,2019-12-31,Club Atlético Rosario Central,Club Atlético Boca Juniors II,2500000.0,0.0,N,Y,0.0,N
+424042.0,20/21,2020-09-15,Club Atlético Boca Juniors II,Udinese Calcio,,0.0,N,N,,Y
+435228.0,15/16,2015-08-06,KF 2 Korriku,FC Prishtina,,0.0,N,Y,0.0,N
+435228.0,15/16,2016-02-15,FC Prishtina,KF 2 Korriku,,0.0,N,Y,0.0,N
+435228.0,15/16,2016-02-22,KF 2 Korriku,HNK Hajduk Split II,,,N,N,,N
+435228.0,16/17,2016-07-01,HNK Hajduk Split II,HNK Hajduk Split,,,N,N,,N
+435228.0,20/21,2020-09-14,HNK Hajduk Split,Spezia Calcio,950000.0,2500000.0,N,N,,N
+503679.0,17/18,2017-07-01,Liverpool FC Youth,Liverpool FC U18,,,N,N,,N
+503679.0,19/20,2019-07-01,Liverpool FC U18,Liverpool FC U23,,,N,N,,N
+503679.0,19/20,2019-07-31,Liverpool FC U23,Kidderminster Harriers,,0.0,N,Y,0.0,N
+503679.0,19/20,2020-01-01,Kidderminster Harriers,Liverpool FC U23,,0.0,N,Y,0.0,N
+531829.0,16/17,2016-08-09,CD Castellón U19,CD Lugo U19,,,N,N,,N
+531829.0,17/18,2017-07-01,CD Lugo U19,CD Lugo B Polvorín,,,N,N,,N
+531829.0,18/19,2018-07-01,CD Lugo B Polvorín,CD Lugo,200000.0,,N,N,,N
+531829.0,18/19,2018-07-15,CD Lugo,SD Huesca,200000.0,500000.0,N,N,,N
+531829.0,18/19,2018-07-16,SD Huesca,CD Lugo,200000.0,0.0,N,Y,0.0,N
+531829.0,18/19,2019-06-30,CD Lugo,SD Huesca,500000.0,0.0,N,Y,0.0,N
+531829.0,19/20,2020-01-20,SD Huesca,Elche CF,800000.0,0.0,N,Y,0.0,N
+531829.0,19/20,2020-08-24,Elche CF,SD Huesca,725000.0,0.0,N,Y,0.0,N
+602105.0,17/18,2018-01-01,FC São Paulo U17,FC São Paulo B,,,N,N,,N
+602105.0,18/19,2019-01-01,FC São Paulo B,São Paulo Futebol Clube,,,N,N,,N
+602105.0,20/21,2020-07-01,São Paulo Futebol Clube,Ajax Amsterdam,18000000.0,15750000.0,N,N,,N

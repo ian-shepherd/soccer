@@ -15,3 +15,7 @@ Dashboard changes
 * Removed date slider funcitonality
 * Added apply button for filters
 * Added player comparison functionality
+
+### 0.1.1 2021-03-16 Dashboard bug
+Added instructions for users to sidebar
+Removed dynamic colors for player comparison view due to difficulty differentiating similar looking colors

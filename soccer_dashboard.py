@@ -760,6 +760,12 @@ with row1_2:
 #~~~~~SIDEBAR~~~~~
 
 # Inputs
+st.sidebar.write("""
+                 Click apply after you select your player(s), season, and minimum number of minutes
+                 for the dashboard to display. As an FYI, MLS players will have no data for the 20/21 
+                 season and will therefore return an error unless they appeared in one of the other 
+                 competitions.
+                 """)
 selected_view = st.sidebar.radio('View', ('Player', 'Player Comparison'))
 
 if selected_view == 'Player':
@@ -800,19 +806,8 @@ if st.sidebar.button('Apply'):
         player_id2 = player_dim[player_dim['player_slicer']==selected_player2]['fbref'].iloc[0]
         pos_group2 = player_dim[player_dim['fbref']==player_id2]['pos_group'].iloc[0]
         club2 = player_dim[player_dim['fbref']==player_id2]['club'].iloc[0]
-        p_color_club2 = team_dim[team_dim['transfermarkt_name']==club2]['primary_color'].iloc[0]
-        s_color_club2 = team_dim[team_dim['transfermarkt_name']==club2]['secondary_color'].iloc[0]
-        if p_color_club2.upper() not in ('#FFFFFF', '#FCFCFC', '#FAF7F7') and p_color_club2.upper() != club_color.upper():
-            club_color2 = p_color_club2
-        elif p_color_club2.upper() in ('#FFFFFF', '#FCFCFC', '#FAF7F7') and s_color_club2.upper() != club_color.upper():
-            club_color2 = s_color_club2
-        elif isinstance(team_dim[team_dim['transfermarkt_name']==club2]['alternate_color'].iloc[0], float):
-            club_color2 = '#34EB83'
-        else:
-            club_color2 = team_dim[team_dim['transfermarkt_name']==club2]['alternate_color'].iloc[0]
-            
-        if club_color == club_color2:
-            club_color2 = '#34EB83'
+        club_color = '#D13232'
+        club_color2 = '#326FD1'
 
         
         # call function
@@ -827,12 +822,7 @@ if st.sidebar.button('Apply'):
     except Exception:
         pass
     
-    
-    
-    
-    view(selected_view)
- 
-    
+    view(selected_view)  
 
 
 

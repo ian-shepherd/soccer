@@ -47,11 +47,7 @@ match_urls = match_urls[match_urls['reason'].isnull()].drop(columns={'reason'})
 match_urls = match_urls.merge(match_dim.loc[:,['url']], how='left', left_on='urls', right_on='url')
 match_urls = match_urls[match_urls['url'].isnull()].drop(columns={'url'})
 
-# Temp removal
-match_urls = match_urls[match_urls['urls']!='/en/matches/24fb469e/Chicago-Fire-Columbus-Crew-August-23-2018-Major-League-Soccer']
-match_urls = match_urls[match_urls['urls']!='/en/matches/94889482/Strasbourg-Lille-August-13-2017-Ligue-1']
-
-    
+   
 # Tell webpage human browser
 headers = {'User-Agent':
            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
