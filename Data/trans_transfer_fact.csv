@@ -47739,3 +47739,20 @@ id,season,date,left,joined,value,fee,future,loan,loan_fee,free
 602105.0,17/18,2018-01-01,FC São Paulo U17,FC São Paulo B,,,N,N,,N
 602105.0,18/19,2019-01-01,FC São Paulo B,São Paulo Futebol Clube,,,N,N,,N
 602105.0,20/21,2020-07-01,São Paulo Futebol Clube,Ajax Amsterdam,18000000.0,15750000.0,N,N,,N
+225823.0,12/13,2013-02-22,Viking FK Stavanger U19,Viking Stavanger,,,N,N,,N
+225823.0,17/18,2018-01-12,Viking Stavanger,Molde FK,400000.0,260000.0,N,N,,N
+275423.0,05/06,2005-08-24,SV Matrei Youth,SV Navis Youth,,,N,N,,N
+275423.0,10/11,2010-07-01,SV Navis Youth,SV Navis,,,N,N,,N
+275423.0,11/12,2011-08-15,SV Navis,SV Matrei,,,N,N,,N
+275423.0,13/14,2013-07-15,SV Matrei,SVG Reichenau,,,N,N,,N
+275423.0,14/15,2014-07-07,SVG Reichenau,WSG Wattens,,,N,N,,N
+275423.0,17/18,2017-07-01,WSG Wattens,SCR Altach,350000.0,,N,N,,N
+275423.0,20/21,2020-07-15,SCR Altach,Arminia Bielefeld,550000.0,0.0,N,N,,Y
+338032.0,06/07,2006-07-01,DVC Buiksloot Youth,Ajax Amsterdam Youth,,0.0,N,N,,Y
+338032.0,15/16,2015-07-01,Ajax Amsterdam U17,Ajax Amsterdam U19,,,N,N,,N
+338032.0,16/17,2016-07-01,Ajax Amsterdam U19,Ajax Amsterdam U21,50000.0,,N,N,,N
+338032.0,17/18,2017-07-01,Ajax Amsterdam U21,Ajax Amsterdam,300000.0,,N,N,,N
+338032.0,17/18,2018-01-31,Ajax Amsterdam,FC Groningen,500000.0,0.0,N,Y,0.0,N
+338032.0,17/18,2018-06-30,FC Groningen,Ajax Amsterdam,600000.0,0.0,N,Y,0.0,N
+338032.0,18/19,2018-07-01,Ajax Amsterdam,FC Groningen,600000.0,300000.0,N,N,,N
+338032.0,20/21,2020-08-06,FC Groningen,Hertha BSC,2700000.0,4000000.0,N,N,,N
